@@ -132,6 +132,7 @@ public class OneActivity extends BaseActivity {
                                         tvTime.setText(str[sum]);
                                         sum++;
                                     } else {
+                                        tvTime.setVisibility(View.GONE);
                                         timer.cancel();
                                     }
                                 }
