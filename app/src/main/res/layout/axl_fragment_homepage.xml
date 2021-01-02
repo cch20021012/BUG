@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF"
+        >
+
+
+    <ImageView
+        android:id="@+id/banner"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_100"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginHorizontal="@dimen/dp_20"
+        android:layout_marginTop="@dimen/dp_10"
+        android:src="@mipmap/ic_image"
+        android:scaleType="centerCrop"
+        />
+        <ImageView
+            android:id="@+id/imageclass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_class"
+            app:layout_constraintTop_toBottomOf="@id/banner"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginTop="@dimen/dp_10"
+            />
+    <ImageView
+        android:id="@+id/train"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/ic_training"
+        app:layout_constraintTop_toBottomOf="@id/imageclass"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        />
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cons1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_30"
+        app:layout_constraintTop_toBottomOf="@id/train"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="讲师介绍"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:textSize="@dimen/dp_16"
+            android:gravity="center"
+            android:textColor="#000000"
+            android:layout_marginLeft="@dimen/dp_10"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="查看跟多"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:gravity="center"
+            android:layout_marginRight="@dimen/dp_10"
+            />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/cons1"
+        android:id="@+id/teacherrecyclerview"
+        android:layout_marginLeft="@dimen/dp_10"
+        />
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cons2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_30"
+        app:layout_constraintTop_toBottomOf="@id/teacherrecyclerview"
+
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="直播课程"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:textSize="@dimen/dp_16"
+            android:gravity="center"
+            android:textColor="#000000"
+            android:layout_marginLeft="@dimen/dp_10"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/cons2"
+        android:id="@+id/livestreamrecyclerview"
+        android:layout_marginLeft="@dimen/dp_10"
+        />
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cons3"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_30"
+            app:layout_constraintTop_toBottomOf="@id/livestreamrecyclerview"
+
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="免费课程"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:textSize="@dimen/dp_16"
+                android:gravity="center"
+                android:textColor="#000000"
+                android:layout_marginLeft="@dimen/dp_10"
+                />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/cons3"
+            android:id="@+id/freeclass"
+            android:layout_marginLeft="@dimen/dp_10"
+            />
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cons4"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_30"
+            app:layout_constraintTop_toBottomOf="@id/freeclass"
+
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="一对一课程"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:textSize="@dimen/dp_16"
+                android:gravity="center"
+                android:textColor="#000000"
+                android:layout_marginLeft="@dimen/dp_10"
+                />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/cons4"
+            android:id="@+id/onetooneclass"
+            android:layout_marginLeft="@dimen/dp_10"
+            />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
