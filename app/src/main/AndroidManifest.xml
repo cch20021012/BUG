@@ -9,7 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".axl.OneToOneActivity"></activity>
+        <activity android:name=".axl.LoginActivity">
+
+
+        </activity>
+        <activity android:name=".axl.OneToOneActivity" />
         <activity android:name=".axl.CalendarActivity" />
         <activity android:name=".axl.AskActivity" />
         <activity android:name=".axl.PayActivity" />
