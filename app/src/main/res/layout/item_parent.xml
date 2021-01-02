@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:background="@drawable/parent_shape">
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:indeterminateTintMode="src_atop"
+        android:indeterminateTint="#FF5722"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginRight="10sp"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        app:layout_constraintRight_toLeftOf="@id/tv_progressNow"
+        app:layout_constraintTop_toBottomOf="@id/tv_progress" />
+
+    <TextView
+        android:id="@+id/tv_state"
+        android:layout_width="wrap_content"
+        android:textColor="#000000"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="30dp"
+        app:layout_constraintBottom_toBottomOf="@id/tv_courseName"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:text="学习进度"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_courseName" />
+
+    <TextView
+        android:id="@+id/tv_courseName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:textSize="20sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_progressNow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10sp"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@id/progress_bar"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/progress_bar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/progress_bar"
+        android:layout_marginVertical="15dp"
+        android:id="@+id/line"
+        android:background="@color/hui"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="钢琴一对一陪练课程"
+        android:textColor="#000000"
+        android:id="@+id/tv_title"
+        app:layout_constraintTop_toBottomOf="@id/line"
+        app:layout_constraintLeft_toLeftOf="@id/progress_bar"
+        android:layout_marginTop="15dp"
+        android:textSize="10sp"
+        android:background="@drawable/shape_work_worknum"
+        android:paddingHorizontal="10dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_time"
+        app:layout_constraintRight_toRightOf="@id/tv_progressNow"
+        android:text="学习时间"
+        android:textColor="#000000"
+        app:layout_constraintTop_toBottomOf="@id/line"
+        android:layout_marginTop="15dp"
+        android:textSize="10sp"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tv_title"
+        android:orientation="horizontal"
+        >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_work"
+        android:text="作业情况"
+        android:background="@drawable/parent_btn_shape"
+        android:textSize="10sp"
+        android:paddingHorizontal="10dp"
+        android:paddingVertical="5dp"
+        android:textColor="#FF5722"
+        android:gravity="center"
+        android:layout_weight="1"
+        android:layout_marginHorizontal = "20dp"
+        android:layout_marginVertical="10dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_analysis"
+        android:text="上课情况分析表"
+        android:background="@drawable/parent_btn_shape"
+        android:textSize="10sp"
+        android:gravity="center"
+        android:paddingHorizontal="10dp"
+        android:paddingVertical="5dp"
+        android:layout_weight="1"
+        android:textColor="#FF5722"
+        android:layout_marginHorizontal = "20dp"
+        android:layout_marginVertical="10dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_leave"
+        android:text="请假"
+        android:background="@drawable/parent_btn_shape"
+        android:textSize="10sp"
+        android:paddingHorizontal="10dp"
+        android:paddingVertical="5dp"
+        android:textColor="#FF5722"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:layout_marginHorizontal = "20dp"
+        android:layout_marginVertical="10dp"/>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

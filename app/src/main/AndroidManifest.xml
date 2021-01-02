@@ -9,18 +9,25 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".psy.ui.MeAcyivity"/>
-        <activity android:name=".base.BaseActivity"/>
-        <activity android:name=".OneActivity">
+        <activity android:name=".psy.ui.DiscountActivity"/>
+        <activity android:name=".psy.ui.TelActivity"/>
+        <activity android:name=".psy.ui.WorkTalkActivity"/>
+        <activity android:name=".psy.ui.ParentActivity"/>
+        <activity android:name=".psy.ui.WorkActivity">
+
+        </activity>
+        <activity android:name=".psy.ui.MeAcyivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivity">
+        <activity android:name=".base.BaseActivity" />
+        <activity android:name=".OneActivity">
 
         </activity>
+        <activity android:name=".MainActivity"></activity>
     </application>
 
 </manifest>

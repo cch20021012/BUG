@@ -11,5 +11,22 @@
     <color name="purple_200">#FFBB86FC</color>
     <color name="white">#FFFFFFFF</color>
     <color name="mibai">#F3ECB4</color>
-    <color name="hui">#EDEDEA</color>
+    <color name="hui">#F6F7F9</color>
+    <color name="gray">#F4F1D7</color>
+
+    <color name="colorA">#A3A0A0</color>
+    <color name="colorB">#EF6464</color>
+    <color name="colorC">#FAD8D8</color>
+    <color name="colorD">#00ffffff</color>
+    <color name="colorE">#F4764E</color>
+    <color name="colorGray">#aaa</color>
+    <color name="colorOrange">#DC4515</color>
+
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="red">#ff0000</color>
+    <color name="gray_background">#EFEFEF</color>
+    <color name="gray_word">#DFDFDF</color>
 </resources>
