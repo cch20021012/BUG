@@ -18,6 +18,7 @@ import butterknife.BindView;
 public class CouponFragment extends BaseFragment {
 
     @BindView(R.id.mRec_coupon)
+
     RecyclerView mRecCoupon;
 
     @Override
