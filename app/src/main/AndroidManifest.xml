@@ -20,6 +20,13 @@
 
         </activity>
         <activity android:name=".zyz.personal.PersonalActivity">
+
+        </activity>
+
+        <activity android:name=".zyz.login.LoginMusic">
+
+        </activity>
+        <activity android:name=".zyz.customer.CustomerActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
