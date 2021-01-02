@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/homefragment_ll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="#A7ACAB"
+        app:cardCornerRadius="@dimen/dp_20"
+        app:cardElevation="@dimen/dp_0"
+        app:cardMaxElevation="@dimen/dp_0"
+        app:cardPreventCornerOverlap="true"
+        app:cardUseCompatPadding="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/homefragment2_img"
+                android:layout_width="@dimen/dp_100"
+                android:layout_height="@dimen/dp_80"
+                android:layout_marginLeft="@dimen/dp_20"
+                android:layout_marginTop="@dimen/dp_5"
+                android:src="@mipmap/homefangment2" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_marginTop="@dimen/dp_10"
+                android:layout_toRightOf="@id/homefragment2_img"
+                android:text="钢琴一对一陪练课程"
+                android:textColor="#050505"
+                android:textSize="@dimen/dp_20" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_marginTop="@dimen/dp_40"
+                android:layout_toRightOf="@id/homefragment2_img"
+                android:text="金悦悦老师"
+                android:textSize="@dimen/dp_10" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_marginTop="@dimen/dp_60"
+                android:layout_toRightOf="@id/homefragment2_img"
+                android:text="200/小时"
+                android:textSize="@dimen/dp_10" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="#A7ACAB"
+        app:cardCornerRadius="@dimen/dp_20"
+        app:cardElevation="@dimen/dp_0"
+        app:cardMaxElevation="@dimen/dp_0"
+        app:cardPreventCornerOverlap="true"
+        app:cardUseCompatPadding="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/homefragment2_img2"
+                android:layout_width="@dimen/dp_100"
+                android:layout_height="@dimen/dp_80"
+                android:layout_marginLeft="@dimen/dp_20"
+                android:layout_marginTop="@dimen/dp_5"
+                android:src="@mipmap/homefangment2" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_marginTop="@dimen/dp_10"
+                android:layout_toRightOf="@id/homefragment2_img2"
+                android:text="钢琴一对一陪练课程"
+                android:textColor="#050505"
+                android:textSize="@dimen/dp_20" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_marginTop="@dimen/dp_40"
+                android:layout_toRightOf="@id/homefragment2_img2"
+                android:text="金悦悦老师"
+                android:textSize="@dimen/dp_10" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_marginTop="@dimen/dp_60"
+                android:layout_toRightOf="@id/homefragment2_img2"
+                android:text="200/小时"
+                android:textSize="@dimen/dp_10" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
