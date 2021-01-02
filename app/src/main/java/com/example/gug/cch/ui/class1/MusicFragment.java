@@ -1,11 +1,9 @@
 package com.example.gug.cch.ui.class1;
 
 import android.view.LayoutInflater;
-import android.view.View;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
-import androidx.core.content.ContextCompat;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentPagerAdapter;
 import androidx.viewpager.widget.ViewPager;
@@ -19,7 +17,7 @@ import java.util.ArrayList;
 
 import butterknife.BindView;
 
-public class ClassFragment extends BaseFragment {
+public class MusicFragment extends BaseFragment {
     @BindView(R.id.tl_class)
     TabLayout tlClass;
     @BindView(R.id.vp_class)
@@ -27,7 +25,7 @@ public class ClassFragment extends BaseFragment {
 
     @Override
     protected int getLayout() {
-        return R.layout.cch_fragment_class1;
+        return R.layout.cch_music_fragment;
     }
 
     @Override
@@ -38,10 +36,8 @@ public class ClassFragment extends BaseFragment {
     @Override
     protected void initView() {
         ArrayList<Fragment> fragments = new ArrayList<>();
-        fragments.add(new MusicFragment());
-        fragments.add(new MusicFragment());
-        fragments.add(new MusicFragment());
-        fragments.add(new MiFragment());
+        fragments.add(new XilieFragment());
+        fragments.add(new ZhiboFragment());
         vpClass.setAdapter(new FragmentPagerAdapter(getChildFragmentManager()) {
             @NonNull
             @Override
@@ -55,25 +51,20 @@ public class ClassFragment extends BaseFragment {
             }
         });
         tlClass.setupWithViewPager(vpClass);
-        tlClass.setSelectedTabIndicatorHeight(0);
-        tlClass.getTabAt(0).setText("音乐素养").isSelected();
-        tlClass.getTabAt(1).setText("声乐考级");
-        tlClass.getTabAt(2).setText("成人学习");
-        tlClass.getTabAt(3).setText("乐器");
-        View root = LayoutInflater.from(getActivity()).inflate(R.layout.cch_tab_text_item, null);
-        TextView tv_name = root.findViewById(R.id.tv_name);
-        tv_name.setTextSize(20);
-        tv_name.setText("音乐素养");
-        tlClass.getTabAt(0).setCustomView(root);
+        tlClass.getTabAt(0).setText("系列课程");
+        tlClass.getTabAt(1).setText("直播课程");
+        TextView textView = (TextView) LayoutInflater.from(getActivity()).inflate(R.layout.cch_tab_music_text_item,null);
+        textView.setTextSize(18);
+        textView.setText("系列课程");
+        tlClass.getTabAt(0).setCustomView(textView);
         tlClass.addOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
             @Override
             public void onTabSelected(TabLayout.Tab tab) {
 
-                View root = LayoutInflater.from(getActivity()).inflate(R.layout.cch_tab_text_item, null);
-                TextView tv_name = root.findViewById(R.id.tv_name);
-                tv_name.setTextSize(20);
-                tv_name.setText(tab.getText());
-                tab.setCustomView(root);
+                TextView textView = (TextView) LayoutInflater.from(getActivity()).inflate(R.layout.cch_tab_music_text_item,null);
+                textView.setTextSize(18);
+                textView.setText(tab.getText());
+                tab.setCustomView(textView);
 
             }
             @Override
