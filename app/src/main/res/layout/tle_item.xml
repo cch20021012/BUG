@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:layout_width="230dp"
+        android:id="@+id/line"
+        android:background="@drawable/shape_tel"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            android:orientation="vertical"
+            android:background="@drawable/shape_tel"
+            android:layout_marginTop="@dimen/dp_15"
+            android:layout_marginLeft="@dimen/dp_15"
+            android:layout_marginRight="@dimen/dp_15"
+            >
+            <ImageView
+                android:layout_width="match_parent"
+                android:background="@drawable/shape_tel_img"
+                android:layout_height="@dimen/dp_100"
+                android:src="@mipmap/ic_tel_picture"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_150"
+        android:orientation="vertical"
+        android:background="@drawable/shape_tel_text"
+        app:layout_constraintTop_toBottomOf="@id/line">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="现在拨打电话?"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:textSize="@dimen/dp_25"
+            android:layout_marginTop="@dimen/dp_30"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/dp_15">
+        <Button
+            android:layout_width="@dimen/dp_100"
+            android:layout_height="@dimen/dp_30"
+            android:text="取消"
+            android:textColor="@color/white"
+            android:background="@drawable/shape_tel_canale"
+            android:id="@+id/btn_cancle"/>
+        <TextView
+            android:layout_width="@dimen/dp_50"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:layout_width="@dimen/dp_100"
+            android:layout_height="@dimen/dp_30"
+            android:text="立即拨打"
+            android:textColor="#FFA624"
+            android:background="@drawable/shape_tel_di"
+            android:id="@+id/btn_immediately"/>
+    </LinearLayout>
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

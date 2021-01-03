@@ -1,5 +1,6 @@
 package com.example.gug.base;
 
+import android.app.Activity;
 import android.content.Context;
 import android.util.SparseArray;
 import android.view.LayoutInflater;
@@ -16,7 +17,7 @@ public abstract class BaseAdapter<D> extends RecyclerView.Adapter {
     List<D> mData; //adapter的数据
     protected Context context;
     protected IListClick click;
-
+    protected Activity activity;
     protected IItemViewClick iItemViewClick;
 
     public void addItemViewClick(IItemViewClick click){
@@ -24,8 +25,13 @@ public abstract class BaseAdapter<D> extends RecyclerView.Adapter {
     }
 
     public BaseAdapter(Context context, List<D> data){
+        this(context,data,null);
+    }
+
+    public BaseAdapter(Context context,List<D> Data, Activity activity) {
+        mData = Data;
         this.context = context;
-        mData = data;
+        this.activity = activity;
     }
 
     @NonNull
@@ -36,7 +42,7 @@ public abstract class BaseAdapter<D> extends RecyclerView.Adapter {
             new RuntimeException("布局非法");
         }
         View view = LayoutInflater.from(context).inflate(layout,parent,false);
-        final VH vh = new VH(view);
+        VH vh = new VH(view);
         vh.itemView.setOnClickListener(new View.OnClickListener(){
 
             @Override
