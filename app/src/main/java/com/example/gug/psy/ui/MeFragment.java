@@ -74,6 +74,7 @@ public class MeFragment extends BaseFragment implements View.OnClickListener{
     @BindView(R.id.me_img_right_setting)
     ImageView meImgRightSetting;
 
+
     @Override
     protected int getLayout() {
         return R.layout.layout_fargment_me;
