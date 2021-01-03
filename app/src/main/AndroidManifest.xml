@@ -43,7 +43,7 @@
         <activity android:name=".zjl.ui.navigation.NavigationActivity"/>
         <activity android:name=".zjl.ui.fagment.ParticularsActivity"/>
         <activity android:name=".zjl.ui.fagment.LogisticsActivity"/>
-        <activity android:name=".zjl.ui.navigation.CollectAtcivity">
+        <activity android:name=".zjl.ui.navigation.CollectAtcivity"/>
         <activity android:name=".psy.ui.DiscountActivity"/>
         <activity android:name=".psy.ui.TelActivity"/>
         <activity android:name=".psy.ui.WorkTalkActivity"/>
@@ -59,10 +59,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".base.BaseActivity" />
-        <activity android:name=".OneActivity">
 
-        </activity>
-        <activity android:name=".MainActivity"></activity>
         <meta-data
             android:name="android.webkit.WebView.EnableSafeBrowsing"
             android:value="true" />
