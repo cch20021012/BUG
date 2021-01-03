@@ -37,7 +37,7 @@
         <activity android:name=".zyz.login.LoginMusic">
 
         </activity>
-        <activity android:name=".zyz.customer.CustomerActivity">
+        <activity android:name=".zyz.customer.CustomerActivity"/>
         <activity android:name=".zjl.ui.navigation.ApplyActivity"/>
         <activity android:name=".zjl.ui.navigation.OrderformActivity"/>
         <activity android:name=".zjl.ui.navigation.NavigationActivity"/>
@@ -50,6 +50,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <meta-data
+            android:name="android.webkit.WebView.EnableSafeBrowsing"
+            android:value="true" />
     </application>
 
 </manifest>

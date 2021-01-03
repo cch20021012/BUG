@@ -1,5 +1,7 @@
 package com.example.gug;
 
+import androidx.appcompat.app.AppCompatActivity;
+
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -8,6 +10,7 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentPagerAdapter;
 import androidx.viewpager.widget.ViewPager;
 
+import com.example.gug.axl.HomePageFragment;
 import com.example.gug.cch.ui.class1.ClassFragment;
 import com.google.android.material.tabs.TabLayout;
 
@@ -29,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
         vp_main = (ViewPager) findViewById(R.id.vp_main);
         tl_main = (TabLayout) findViewById(R.id.tl_main);
         ArrayList<Fragment> fragments = new ArrayList<>();
-        fragments.add(new ClassFragment());
+        fragments.add(new HomePageFragment());
         fragments.add(new ClassFragment());
         fragments.add(new ClassFragment());
         fragments.add(new ClassFragment());
