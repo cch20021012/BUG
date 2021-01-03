@@ -32,6 +32,11 @@ public class EventActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_event);
         initView();
+        initDate();
+    }
+
+    private void initDate() {
+
     }
 
     private void initView() {
