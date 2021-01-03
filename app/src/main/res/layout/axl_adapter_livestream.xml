@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingHorizontal="@dimen/dp_10"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView
+        android:layout_width="@dimen/dp_130"
+        android:layout_height="@dimen/dp_80"
+        android:src="@mipmap/livesteam"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:id="@+id/image"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="声乐教学-免费讲60秒"
+        app:layout_constraintTop_toBottomOf="@id/image"
+        app:layout_constraintLeft_toLeftOf="@id/image"
+        android:textSize="@dimen/dp_11"
+        android:layout_marginTop="@dimen/dp_0_5"
+        android:id="@+id/title"
+        />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/title"
+        app:layout_constraintLeft_toLeftOf="@id/title"
+        android:text="给你来一段巴赫小舞曲"
+        android:layout_marginTop="@dimen/dp_5"
+        android:textSize="@dimen/dp_8"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>
