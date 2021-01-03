@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    app:cardCornerRadius="8dp"
+    app:cardElevation="3dp"
+    app:cardUseCompatPadding="true"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/hui"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout
+        android:layout_marginTop="@dimen/dp_1"
+        android:paddingTop="@dimen/dp_10"
+        android:layout_marginBottom="@dimen/dp_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/work_img_img"
+            android:src="@mipmap/me_work_wormen"
+            android:scaleType="fitXY"
+            android:layout_width="@dimen/dp_130"
+            android:layout_height="@dimen/dp_80"/>
+
+        <TextView
+            android:id="@+id/work_tv_name"
+            android:text="11111"
+            android:textSize="@dimen/dp_20"
+            android:layout_toRightOf="@id/work_img_img"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:layout_marginTop="@dimen/dp_10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:src="@mipmap/me_star"
+            android:layout_toRightOf="@id/work_img_img"
+            android:layout_marginTop="@dimen/dp_40"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:layout_width="@dimen/dp_40"
+            android:layout_height="@dimen/dp_40"/>
+
+        <ImageView
+            android:src="@mipmap/me_star"
+            android:layout_toRightOf="@id/work_img_img"
+            android:layout_marginTop="@dimen/dp_40"
+            android:layout_marginLeft="@dimen/dp_50"
+            android:layout_width="@dimen/dp_40"
+            android:layout_height="@dimen/dp_40"/>
+        <ImageView
+            android:src="@mipmap/me_star"
+            android:layout_toRightOf="@id/work_img_img"
+            android:layout_marginTop="@dimen/dp_40"
+            android:layout_marginLeft="@dimen/dp_80"
+            android:layout_width="@dimen/dp_40"
+            android:layout_height="@dimen/dp_40"/>
+
+        <ImageView
+            android:layout_toRightOf="@id/work_img_img"
+            android:src="@mipmap/me_like"
+            android:layout_marginLeft="@dimen/dp_180"
+            android:layout_width="@dimen/dp_40"
+            android:layout_height="@dimen/dp_40"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:paddingBottom="@dimen/dp_10"
+        android:layout_marginTop="@dimen/dp_100"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/work_tv_worknum"
+            android:text="声乐系统课-第一节"
+            android:background="@drawable/shape_work_worknum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_10"/>
+
+        <TextView
+            android:id="@+id/work_tv_data"
+            android:text="9小时前"
+            android:layout_toRightOf="@id/work_tv_worknum"
+            android:layout_marginLeft="@dimen/dp_180"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/work_btn_look"
+            android:text="查看点评"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dp_20"
+            android:layout_below="@id/work_tv_worknum"
+            android:layout_marginTop="@dimen/dp_20"
+            android:layout_marginLeft="@dimen/dp_130"
+            android:background="@drawable/me_fragment_rl_select"
+            android:layout_width="@dimen/dp_110"
+            android:layout_height="@dimen/dp_37"/>
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>
