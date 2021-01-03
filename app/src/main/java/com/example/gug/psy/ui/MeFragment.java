@@ -79,6 +79,7 @@ public class MeFragment extends BaseFragment implements View.OnClickListener{
         return R.layout.layout_fargment_me;
     }
 
+
     @Override
     protected IBasePresenter createPrenter() {
         return null;
