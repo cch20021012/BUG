@@ -47,6 +47,7 @@ public class EventActivity extends AppCompatActivity {
         mEventRecycler = (RecyclerView) findViewById(R.id.recycler_event);
 
 
+//        123
         mNewActivityRecycler.setLayoutManager(new StaggeredGridLayoutManager(2, StaggeredGridLayoutManager.VERTICAL));
         newList = new ArrayList<>();
         for (int i = 0; i < 2; i++) {
