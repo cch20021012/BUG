@@ -7,7 +7,7 @@ import com.example.gug.interfaces.IBasePresenter;
 public class UseFragment extends BaseFragment {
     @Override
     protected int getLayout() {
-        return R.layout.use_fragment;
+        return R.layout.zyz_use_fragment;
     }
 
     @Override

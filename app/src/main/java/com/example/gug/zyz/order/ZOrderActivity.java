@@ -1,8 +1,6 @@
 package com.example.gug.zyz.order;
 
 import android.os.Bundle;
-import android.widget.ImageView;
-import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
@@ -28,7 +26,7 @@ public class ZOrderActivity extends BaseActivity {
 
     @Override
     protected int getLayout() {
-        return R.layout.activity_order;
+        return R.layout.zyz_activity_order;
     }
 
     @Override

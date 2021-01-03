@@ -7,7 +7,7 @@ import com.example.gug.interfaces.IBasePresenter;
 public class LoginMusic extends BaseActivity {
     @Override
     protected int getLayout() {
-        return R.layout.activity_loginmusic;
+        return R.layout.zyz_activity_loginmusic;
     }
 
     @Override

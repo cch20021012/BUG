@@ -8,7 +8,7 @@ import com.example.gug.interfaces.IBasePresenter;
 public class ZLoginActivity extends BaseActivity {
     @Override
     protected int getLayout() {
-        return R.layout.activity_login;
+        return R.layout.zyz_activity_login;
     }
 
     @Override

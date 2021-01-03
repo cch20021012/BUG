@@ -1,7 +1,6 @@
 package com.example.gug.zyz.order.adapter;
 
 import android.content.Context;
-import android.view.View;
 import android.widget.TextView;
 
 import com.example.gug.R;
@@ -17,7 +16,7 @@ public class OkAdapter extends BaseAdapter {
 
     @Override
     protected int getLayout(int type) {
-        return R.layout.ok_adapter;
+        return R.layout.zyz_ok_adapter;
     }
 
     @Override

@@ -17,7 +17,7 @@ public class PersonalActivity extends BaseActivity {
 
     @Override
     protected int getLayout() {
-        return R.layout.activity_personal;
+        return R.layout.zyz_activity_personal;
     }
 
     @Override

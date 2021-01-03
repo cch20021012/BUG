@@ -9,7 +9,7 @@ import com.example.gug.interfaces.IBasePresenter;
 public class CustomerActivity extends BaseActivity {
     @Override
     protected int getLayout() {
-        return R.layout.activity_customer;
+        return R.layout.zyz_activity_customer;
     }
 
     @Override

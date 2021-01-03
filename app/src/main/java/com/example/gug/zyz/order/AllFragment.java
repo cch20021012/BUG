@@ -9,7 +9,6 @@ import com.example.gug.interfaces.IBasePresenter;
 import com.example.gug.zyz.order.adapter.OkAdapter;
 import com.example.gug.zyz.order.bean.Score;
 
-import java.security.Key;
 import java.util.ArrayList;
 
 import butterknife.BindView;
@@ -20,7 +19,7 @@ public class AllFragment extends BaseFragment {
 
     @Override
     protected int getLayout() {
-        return R.layout.fragment_order;
+        return R.layout.zyz_fragment_order;
     }
 
     @Override
