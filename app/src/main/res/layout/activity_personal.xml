@@ -109,6 +109,14 @@
 
     </LinearLayout>
 
+    <View
+        app:layout_constraintTop_toBottomOf="@id/ll_name"
+        android:background="#DDD1D1"
+        android:id="@+id/View"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
     <LinearLayout
         android:id="@+id/ll_sex"
         android:layout_width="match_parent"
@@ -142,6 +150,12 @@
             app:layout_constraintTop_toBottomOf="@id/tv_zl" />
 
     </LinearLayout>
+    <View
+        app:layout_constraintTop_toBottomOf="@id/ll_sex"
+        android:background="#DDD1D1"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
 
     <LinearLayout
         android:id="@+id/ll_age"
@@ -176,6 +190,12 @@
             app:layout_constraintTop_toBottomOf="@id/tv_zl" />
 
     </LinearLayout>
+    <View
+        app:layout_constraintTop_toBottomOf="@id/ll_age"
+        android:background="#DDD1D1"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
 
     <LinearLayout
         android:id="@+id/ll_tel"
@@ -210,7 +230,12 @@
             app:layout_constraintTop_toBottomOf="@id/tv_zl" />
 
     </LinearLayout>
-
+    <View
+        app:layout_constraintTop_toBottomOf="@id/ll_tel"
+        android:background="#DDD1D1"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
 
     <LinearLayout
         android:id="@+id/ll_update"
@@ -224,7 +249,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="@dimen/dp_20"
-            android:layout_marginTop="@dimen/dp_20"
+            android:layout_marginTop="@dimen/dp_25"
             android:layout_marginBottom="@dimen/dp_20"
             android:text="修改绑定手机"
             android:textSize="@dimen/sp_16"
@@ -237,13 +262,20 @@
             android:layout_width="wrap_content"
             android:layout_height="@dimen/dp_25"
             android:layout_marginLeft="@dimen/dp_140"
-            android:layout_marginTop="@dimen/dp_15"
+            android:layout_marginTop="@dimen/dp_25"
             android:background="#fff"
             android:text="发送验证码" />
 
     </LinearLayout>
+    <View
+        app:layout_constraintTop_toBottomOf="@id/ll_update"
+        android:background="#DDD1D1"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
 
     <LinearLayout
+        android:layout_marginTop="@dimen/dp_20"
         android:id="@+id/ll_update_pwd"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -255,7 +287,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="@dimen/dp_20"
-
             android:text="修改密码 "
             android:textSize="@dimen/sp_16"
             app:layout_constraintLeft_toLeftOf="parent"
@@ -311,6 +342,12 @@
 
 
     </LinearLayout>
+    <View
+        app:layout_constraintTop_toBottomOf="@id/ll_update_pwd2"
+        android:background="#DDD1D1"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
 
     <Button
         android:id="@+id/bt_ok"
