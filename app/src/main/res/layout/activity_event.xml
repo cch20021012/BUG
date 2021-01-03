@@ -6,7 +6,11 @@
     android:layout_height="match_parent"
     tools:context=".zzx.EventActivity">
 
+
+
     <LinearLayout
+
+
         android:paddingLeft="@dimen/dp_20"
         android:id="@+id/ll"
         android:layout_width="match_parent"

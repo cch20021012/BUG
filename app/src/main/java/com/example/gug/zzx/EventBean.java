@@ -6,6 +6,8 @@ public class EventBean {
     private String content;
 
     public EventBean() {
+
+
     }
 
     public EventBean(int id, String title, String content) {

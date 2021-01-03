@@ -12,6 +12,8 @@ import java.util.List;
 public class NewActivityAdapter extends BaseAdapter {
     private List<EventBean> list;
     public NewActivityAdapter(Context context, List<EventBean> data) {
+
+
         super(context, data);
         this.list=data;
     }

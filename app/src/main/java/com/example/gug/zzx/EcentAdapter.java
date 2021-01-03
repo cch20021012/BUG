@@ -29,5 +29,7 @@ public class EcentAdapter extends BaseAdapter {
         imgBig.setImageResource(bean.getId());
         txt_title.setText(bean.getTitle());
         txt_content.setText(bean.getContent());
+
+
     }
 }
