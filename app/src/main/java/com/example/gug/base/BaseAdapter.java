@@ -36,7 +36,7 @@ public abstract class BaseAdapter<D> extends RecyclerView.Adapter {
             new RuntimeException("布局非法");
         }
         View view = LayoutInflater.from(context).inflate(layout,parent,false);
-        final VH vh = new VH(view);
+        VH vh = new VH(view);
         vh.itemView.setOnClickListener(new View.OnClickListener(){
 
             @Override
