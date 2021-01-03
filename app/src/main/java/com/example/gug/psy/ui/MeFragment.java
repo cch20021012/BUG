@@ -89,6 +89,7 @@ public class MeFragment extends BaseFragment implements View.OnClickListener{
         meImgRightWork.setOnClickListener(this);
     }
 
+    
     @Override
     protected void initData() {
 
