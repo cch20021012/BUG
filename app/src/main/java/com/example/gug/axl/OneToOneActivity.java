@@ -63,7 +63,7 @@ public class OneToOneActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_one_to_one);
+        setContentView(R.layout.axl_activity_one_to_one);
         ButterKnife.bind(this);
         initView();
     }
@@ -170,7 +170,7 @@ public class OneToOneActivity extends AppCompatActivity {
 
     private void popwindows() {
 
-        View inflate = LayoutInflater.from(this).inflate(R.layout.pop_item, null);
+        View inflate = LayoutInflater.from(this).inflate(R.layout.axl_pop_item, null);
         PopupWindow popupWindow = new PopupWindow(inflate, 800, 400);
         popupWindow.setBackgroundDrawable(new ColorDrawable());
         popupWindow.setOutsideTouchable(true);

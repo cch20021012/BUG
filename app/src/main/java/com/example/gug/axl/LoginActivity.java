@@ -46,12 +46,13 @@ public class LoginActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_login);
+        setContentView(R.layout.axl_activity_login);
         ButterKnife.bind(this);
         initView();
     }
 
     private void initView() {
+
         code.setOnClickListener(new View.OnClickListener() {
             @SuppressLint("ResourceAsColor")
             @Override
@@ -63,6 +64,7 @@ public class LoginActivity extends AppCompatActivity {
                 vc.setVisibility(View.VISIBLE);
             }
         });
+
         mima.setOnClickListener(new View.OnClickListener() {
             @SuppressLint("ResourceAsColor")
             @Override
