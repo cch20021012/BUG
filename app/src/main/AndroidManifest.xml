@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.gug">
-
+<uses-permission android:name="android.permission.INTERNET"/>
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -30,6 +30,12 @@
 
         </activity>
         <activity android:name=".zyz.customer.CustomerActivity">
+        <activity android:name=".zjl.ui.navigation.ApplyActivity"/>
+        <activity android:name=".zjl.ui.navigation.OrderformActivity"/>
+        <activity android:name=".zjl.ui.navigation.NavigationActivity"/>
+        <activity android:name=".zjl.ui.fagment.ParticularsActivity"/>
+        <activity android:name=".zjl.ui.fagment.LogisticsActivity"/>
+        <activity android:name=".zjl.ui.navigation.CollectAtcivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
