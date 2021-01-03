@@ -3,18 +3,26 @@ package com.example.gug.psy.ui;
 
 import android.content.Intent;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
+import androidx.constraintlayout.widget.ConstraintLayout;
+
 import com.example.gug.R;
+import com.example.gug.axl.AboutActivity;
 import com.example.gug.base.BaseFragment;
 import com.example.gug.interfaces.IBasePresenter;
+import com.example.gug.zyz.ShezhiActivity;
+import com.example.gug.zyz.customer.CustomerActivity;
+import com.example.gug.zyz.order.ZOrderActivity;
+import com.example.gug.zyz.personal.PersonalActivity;
 
 import butterknife.BindView;
 import butterknife.OnClick;
 
-public class MeFragment extends BaseFragment implements View.OnClickListener{
+public class MeFragment extends BaseFragment implements View.OnClickListener {
     @BindView(R.id.me_img_voice)
     ImageView meImgVoice;
     @BindView(R.id.me_tv_name)
@@ -73,6 +81,13 @@ public class MeFragment extends BaseFragment implements View.OnClickListener{
     TextView meTvSetting;
     @BindView(R.id.me_img_right_setting)
     ImageView meImgRightSetting;
+    @BindView(R.id.me_fragment_btn_more)
+    Button meFragmentBtnMore;
+    @BindView(R.id.two)
+    ConstraintLayout two;
+    @BindView(R.id.one)
+    ConstraintLayout one;
+
 
     @Override
     protected int getLayout() {
@@ -89,28 +104,46 @@ public class MeFragment extends BaseFragment implements View.OnClickListener{
     protected void initView() {
         meImgRightWork.setOnClickListener(this);
     }
+
     @Override
     protected void initData() {
 
     }
 
-    @OnClick({R.id.me_img_right_work, R.id.me_img_right_sport, R.id.me_img_right_moeny, R.id.me_img_right_parent, R.id.me_img_right_nowchat, R.id.me_img_right_setting})
+    @OnClick({R.id.me_fragment_btn_more,R.id.me_img_exit, R.id.me_img_right_work, R.id.me_img_right_sport, R.id.me_img_right_moeny, R.id.me_img_right_parent, R.id.me_img_right_nowchat, R.id.me_img_right_setting})
     public void onClick(View view) {
         switch (view.getId()) {
+            case R.id.me_fragment_btn_more:
+                //跳转到积分
+                startActivity(new Intent(getContext(), ZOrderActivity.class));
+                break;
+            case R.id.me_img_exit:
+                //个人信息
+                startActivity(new Intent(getContext(), PersonalActivity.class));
+                break;
             case R.id.me_img_right_work:
-                startActivity(new Intent(getContext(),WorkActivity.class));
+                //我的作业
+                startActivity(new Intent(getContext(), WorkActivity.class));
                 break;
             case R.id.me_img_right_sport:
+                //我的活动
                 break;
             case R.id.me_img_right_moeny:
-                startActivity(new Intent(getContext(),DiscountActivity.class));
+                //我的优惠券
+                startActivity(new Intent(getContext(), DiscountActivity.class));
                 break;
             case R.id.me_img_right_parent:
-                startActivity(new Intent(getContext(),ParentActivity.class));
+                //家长专区
+                startActivity(new Intent(getContext(), ParentActivity.class));
                 break;
             case R.id.me_img_right_nowchat:
+                //在线客服
+                startActivity(new Intent(getContext(), CustomerActivity.class));
                 break;
             case R.id.me_img_right_setting:
+                //设置
+               startActivity(new Intent(getContext(), ShezhiActivity.class));
+                //startActivity(new Intent(getContext(), AboutActivity.class));
                 break;
         }
     }

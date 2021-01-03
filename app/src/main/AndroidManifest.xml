@@ -10,7 +10,8 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".axl.LoginActivity">
-
+        </activity>
+        <activity android:name=".zyz.ShezhiActivity">
 
         </activity>
         <activity android:name=".axl.OneToOneActivity" />
@@ -21,7 +22,11 @@
         <activity android:name=".axl.IdentityActivity" />
         <activity android:name=".axl.SettlementActivity" />
         <activity android:name=".OneActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
         <activity android:name=".MainActivity">
 
@@ -37,6 +42,7 @@
         <activity android:name=".zyz.login.LoginMusic">
 
         </activity>
+
         <activity android:name=".zyz.customer.CustomerActivity"/>
         <activity android:name=".zjl.ui.navigation.ApplyActivity"/>
         <activity android:name=".zjl.ui.navigation.OrderformActivity"/>
@@ -52,11 +58,7 @@
 
         </activity>
         <activity android:name=".psy.ui.MeAcyivity" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity android:name=".base.BaseActivity" />
 

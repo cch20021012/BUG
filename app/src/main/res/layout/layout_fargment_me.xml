@@ -100,6 +100,7 @@
                         android:layout_height="wrap_content"/>
 
                     <Button
+                        android:id="@+id/me_fragment_btn_more"
                         android:background="@drawable/me_fragment_btn_more_select"
                         android:text="查看更多"
                         android:layout_marginLeft="280dp"

@@ -1,5 +1,6 @@
 package com.example.gug.zyz;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.recyclerview.widget.DividerItemDecoration;
@@ -7,7 +8,9 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.gug.R;
+import com.example.gug.axl.AboutActivity;
 import com.example.gug.base.BaseActivity;
+import com.example.gug.base.BaseAdapter;
 import com.example.gug.interfaces.IBasePresenter;
 
 import java.util.ArrayList;
@@ -22,7 +25,7 @@ public class ShezhiActivity extends BaseActivity {
 
     @Override
     protected int getLayout() {
-        return R.layout.zyz_activity_shezhi;
+        return R.layout.cch_shezhi_activity;
     }
 
     @Override
@@ -46,6 +49,14 @@ public class ShezhiActivity extends BaseActivity {
         rlv.setLayoutManager(new LinearLayoutManager(this));
         rlv.addItemDecoration(new DividerItemDecoration(this,DividerItemDecoration.VERTICAL));
         rlv.setAdapter(sheAdapter);
+        sheAdapter.addListClick(new BaseAdapter.IListClick() {
+            @Override
+            public void itemClick(int pos) {
+                if (pos==0){
+                    startActivity(new Intent(ShezhiActivity.this, AboutActivity.class));
+                }
+            }
+        });
     }
 
     @Override
