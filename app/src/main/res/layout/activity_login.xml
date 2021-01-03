@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_wel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20sp"
+        android:text="欢迎您的加入"
+        android:textColor="#0B0A0A"
+        android:textSize="30sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_tel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="90dp"
+        android:text="151****0410"
+        android:textColor="#0B0A0A"
+        android:textSize="20sp"
+        app:layout_constraintLeft_toLeftOf="@id/tv_wel"
+        app:layout_constraintTop_toBottomOf="@id/tv_wel" />
+
+    <TextView
+        android:id="@+id/tv_zg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="中国移动提供认证服务"
+        android:textSize="16sp"
+        app:layout_constraintLeft_toLeftOf="@id/tv_wel"
+        app:layout_constraintTop_toBottomOf="@id/tv_tel" />
+
+    <Button
+        android:id="@+id/bt_login"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/me_btnlogin"
+        android:text="本机号码一键登录"
+        android:textColor="#fff"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <CheckBox
+        android:id="@+id/cb_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        app:layout_constraintLeft_toLeftOf="@id/bt_login"
+        app:layout_constraintTop_toBottomOf="@id/bt_login" />
+
+    <TextView
+        android:id="@+id/tv_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:text="登陆即代表同意《中国移动认证服务条款》和《用户协议》"
+        android:textSize="12sp"
+        app:layout_constraintLeft_toRightOf="@id/cb_login"
+        app:layout_constraintTop_toTopOf="@id/cb_login" />
+
+    <TextView
+        android:id="@+id/tv_other"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="90dp"
+        android:text="其他登录方式"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cb_login" />
+
+    <ImageView
+        android:id="@+id/iv_chat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/me_weixin"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_other" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
