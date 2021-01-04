@@ -94,6 +94,18 @@ public class MeFragment extends BaseFragment implements View.OnClickListener {
     LinearLayout meCollection;
     @BindView(R.id.me_dingdan)
     LinearLayout meDingdan;
+    @BindView(R.id.me_layout_work)
+    LinearLayout meLayoutWork;
+    @BindView(R.id.me_layout_sport)
+    LinearLayout meLayoutSport;
+    @BindView(R.id.me_layout_moeny)
+    LinearLayout meLayoutMoeny;
+    @BindView(R.id.me_layout_parent)
+    LinearLayout meLayoutParent;
+    @BindView(R.id.me_layout_nowchat)
+    LinearLayout meLayoutNowchat;
+    @BindView(R.id.me_layout_setting)
+    LinearLayout meLayoutSetting;
 
 
     @Override
@@ -117,7 +129,7 @@ public class MeFragment extends BaseFragment implements View.OnClickListener {
 
     }
 
-    @OnClick({R.id.me_collection,R.id.me_dingdan,R.id.me_fragment_btn_more, R.id.me_img_exit, R.id.me_img_right_work, R.id.me_img_right_sport, R.id.me_img_right_moeny, R.id.me_img_right_parent, R.id.me_img_right_nowchat, R.id.me_img_right_setting})
+    @OnClick({R.id.me_collection, R.id.me_dingdan, R.id.me_fragment_btn_more, R.id.me_img_exit, R.id.me_layout_work, R.id.me_layout_sport, R.id.me_layout_moeny, R.id.me_layout_parent, R.id.me_layout_nowchat, R.id.me_layout_setting})
     public void onClick(View view) {
         switch (view.getId()) {
             case R.id.me_fragment_btn_more:
@@ -128,27 +140,27 @@ public class MeFragment extends BaseFragment implements View.OnClickListener {
                 //个人信息
                 startActivity(new Intent(getContext(), PersonalActivity.class));
                 break;
-            case R.id.me_img_right_work:
+            case R.id.me_layout_work:
                 //我的作业
                 startActivity(new Intent(getContext(), WorkActivity.class));
                 break;
-            case R.id.me_img_right_sport:
+            case R.id.me_layout_sport:
                 //我的活动
                 startActivity(new Intent(getActivity(), HotActivity.class));
                 break;
-            case R.id.me_img_right_moeny:
+            case R.id.me_layout_moeny:
                 //我的优惠券
                 startActivity(new Intent(getContext(), DiscountActivity.class));
                 break;
-            case R.id.me_img_right_parent:
+            case R.id.me_layout_parent:
                 //家长专区
                 startActivity(new Intent(getContext(), ParentActivity.class));
                 break;
-            case R.id.me_img_right_nowchat:
+            case R.id.me_layout_nowchat:
                 //在线客服
                 startActivity(new Intent(getContext(), CustomerActivity.class));
                 break;
-            case R.id.me_img_right_setting:
+            case R.id.me_layout_setting:
                 //设置
                 startActivity(new Intent(getContext(), ShezhiActivity.class));
                 //startActivity(new Intent(getContext(), AboutActivity.class));
