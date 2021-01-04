@@ -5,19 +5,22 @@ import android.content.Intent;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import androidx.constraintlayout.widget.ConstraintLayout;
 
 import com.example.gug.R;
-import com.example.gug.axl.AboutActivity;
 import com.example.gug.base.BaseFragment;
 import com.example.gug.interfaces.IBasePresenter;
+import com.example.gug.zjl.ui.navigation.CollectAtcivity;
+import com.example.gug.zjl.ui.navigation.OrderformActivity;
 import com.example.gug.zyz.ShezhiActivity;
 import com.example.gug.zyz.customer.CustomerActivity;
 import com.example.gug.zyz.order.ZOrderActivity;
 import com.example.gug.zyz.personal.PersonalActivity;
+import com.example.gug.zzx.HotActivity;
 
 import butterknife.BindView;
 import butterknife.OnClick;
@@ -87,6 +90,10 @@ public class MeFragment extends BaseFragment implements View.OnClickListener {
     ConstraintLayout two;
     @BindView(R.id.one)
     ConstraintLayout one;
+    @BindView(R.id.me_collection)
+    LinearLayout meCollection;
+    @BindView(R.id.me_dingdan)
+    LinearLayout meDingdan;
 
 
     @Override
@@ -110,7 +117,7 @@ public class MeFragment extends BaseFragment implements View.OnClickListener {
 
     }
 
-    @OnClick({R.id.me_fragment_btn_more,R.id.me_img_exit, R.id.me_img_right_work, R.id.me_img_right_sport, R.id.me_img_right_moeny, R.id.me_img_right_parent, R.id.me_img_right_nowchat, R.id.me_img_right_setting})
+    @OnClick({R.id.me_collection,R.id.me_dingdan,R.id.me_fragment_btn_more, R.id.me_img_exit, R.id.me_img_right_work, R.id.me_img_right_sport, R.id.me_img_right_moeny, R.id.me_img_right_parent, R.id.me_img_right_nowchat, R.id.me_img_right_setting})
     public void onClick(View view) {
         switch (view.getId()) {
             case R.id.me_fragment_btn_more:
@@ -127,6 +134,7 @@ public class MeFragment extends BaseFragment implements View.OnClickListener {
                 break;
             case R.id.me_img_right_sport:
                 //我的活动
+                startActivity(new Intent(getActivity(), HotActivity.class));
                 break;
             case R.id.me_img_right_moeny:
                 //我的优惠券
@@ -142,9 +150,17 @@ public class MeFragment extends BaseFragment implements View.OnClickListener {
                 break;
             case R.id.me_img_right_setting:
                 //设置
-               startActivity(new Intent(getContext(), ShezhiActivity.class));
+                startActivity(new Intent(getContext(), ShezhiActivity.class));
                 //startActivity(new Intent(getContext(), AboutActivity.class));
+                break;
+
+            case R.id.me_collection:
+                startActivity(new Intent(getActivity(), CollectAtcivity.class));
+                break;
+            case R.id.me_dingdan:
+                startActivity(new Intent(getActivity(), OrderformActivity.class));
                 break;
         }
     }
+
 }

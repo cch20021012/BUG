@@ -6,12 +6,13 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentPagerAdapter;
-import androidx.multidex.MultiDex;
+
 import androidx.viewpager.widget.ViewPager;
 
 import com.example.gug.axl.HomePageFragment;
 import com.example.gug.cch.ui.class1.ClassFragment;
 import com.example.gug.psy.ui.MeFragment;
+import com.example.gug.zzx.EventFragment;
 import com.google.android.material.tabs.TabLayout;
 
 import java.util.ArrayList;
@@ -24,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        MultiDex.install(this);
+
         initView();
     }
 
@@ -34,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
         ArrayList<Fragment> fragments = new ArrayList<>();
         fragments.add(new HomePageFragment());
         fragments.add(new ClassFragment());
-        fragments.add(new ClassFragment());
+        fragments.add(new EventFragment());
         fragments.add(new MeFragment());
         vp_main.setAdapter(new FragmentPagerAdapter(getSupportFragmentManager()) {
             @NonNull

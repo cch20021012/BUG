@@ -60,8 +60,14 @@
         <activity android:name=".psy.ui.MeAcyivity" >
 
         </activity>
-        <activity android:name=".base.BaseActivity" />
 
+
+        <activity android:name=".zzx.LogisActivity"></activity>
+        <activity android:name=".zzx.LeaveActivity" />
+        <activity android:name=".zzx.HotActivity" />
+        <activity android:name=".zzx.RankingActivity" />
+        <activity android:name=".base.BaseActivity" />
+        <activity android:name=".zjl.ui.IssueActivity"/>
         <meta-data
             android:name="android.webkit.WebView.EnableSafeBrowsing"
             android:value="true" />

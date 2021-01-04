@@ -119,6 +119,7 @@
 
                     <LinearLayout
                         android:layout_weight="1"
+                        android:id="@+id/me_collection"
                         android:layout_width="0dp"
                         android:orientation="vertical"
                         android:layout_height="wrap_content">
@@ -140,6 +141,7 @@
                     <LinearLayout
                         android:layout_weight="1"
                         android:layout_width="0dp"
+                        android:id="@+id/me_dingdan"
                         android:orientation="vertical"
                         android:layout_height="wrap_content">
                         <ImageView
