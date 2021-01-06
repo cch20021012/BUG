@@ -126,7 +126,6 @@ public class MeFragment extends BaseFragment implements View.OnClickListener {
 
     @Override
     protected void initData() {
-
     }
 
     @OnClick({R.id.me_collection, R.id.me_dingdan, R.id.me_fragment_btn_more, R.id.me_img_exit, R.id.me_layout_work, R.id.me_layout_sport, R.id.me_layout_moeny, R.id.me_layout_parent, R.id.me_layout_nowchat, R.id.me_layout_setting})
