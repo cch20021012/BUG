@@ -55,9 +55,6 @@ public class EventFragment extends Fragment {
         mNewActivityRecycler.setLayoutManager(new StaggeredGridLayoutManager(2, StaggeredGridLayoutManager.VERTICAL));
         newList = new ArrayList<>();
         for (int i = 0; i < 2; i++) {
-
-
-
             final EventBean bean = new EventBean(R.mipmap.music_event_activity, "钢琴直播课程", "12月5日晚8点直播！一起来参加！");
             newList.add(bean);
         }
