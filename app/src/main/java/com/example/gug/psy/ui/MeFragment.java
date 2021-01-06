@@ -166,10 +166,11 @@ public class MeFragment extends BaseFragment implements View.OnClickListener {
                 startActivity(new Intent(getContext(), ShezhiActivity.class));
                 //startActivity(new Intent(getContext(), AboutActivity.class));
                 break;
-
+                //收藏
             case R.id.me_collection:
                 startActivity(new Intent(getActivity(), CollectAtcivity.class));
                 break;
+                //我的订单
             case R.id.me_dingdan:
                 startActivity(new Intent(getActivity(), OrderformActivity.class));
                 break;
