@@ -95,17 +95,17 @@ public class MeFragment extends BaseFragment implements View.OnClickListener {
     @BindView(R.id.me_dingdan)
     LinearLayout meDingdan;
     @BindView(R.id.me_layout_work)
-    LinearLayout meLayoutWork;
+    RelativeLayout meLayoutWork;
     @BindView(R.id.me_layout_sport)
-    LinearLayout meLayoutSport;
+    RelativeLayout meLayoutSport;
     @BindView(R.id.me_layout_moeny)
-    LinearLayout meLayoutMoeny;
+    RelativeLayout meLayoutMoeny;
     @BindView(R.id.me_layout_parent)
-    LinearLayout meLayoutParent;
+    RelativeLayout meLayoutParent;
     @BindView(R.id.me_layout_nowchat)
-    LinearLayout meLayoutNowchat;
+    RelativeLayout meLayoutNowchat;
     @BindView(R.id.me_layout_setting)
-    LinearLayout meLayoutSetting;
+    RelativeLayout meLayoutSetting;
 
 
     @Override
@@ -126,12 +126,13 @@ public class MeFragment extends BaseFragment implements View.OnClickListener {
 
     @Override
     protected void initData() {
-
     }
 
     @OnClick({R.id.me_collection, R.id.me_dingdan, R.id.me_fragment_btn_more, R.id.me_img_exit, R.id.me_layout_work, R.id.me_layout_sport, R.id.me_layout_moeny, R.id.me_layout_parent, R.id.me_layout_nowchat, R.id.me_layout_setting})
     public void onClick(View view) {
         switch (view.getId()) {
+
+
             case R.id.me_fragment_btn_more:
                 //跳转到积分
                 startActivity(new Intent(getContext(), ZOrderActivity.class));
