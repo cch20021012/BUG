@@ -132,6 +132,7 @@ public class MeFragment extends BaseFragment implements View.OnClickListener {
     public void onClick(View view) {
         switch (view.getId()) {
 
+
             case R.id.me_fragment_btn_more:
                 //跳转到积分
                 startActivity(new Intent(getContext(), ZOrderActivity.class));
