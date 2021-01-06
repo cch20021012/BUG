@@ -194,6 +194,7 @@
                     android:layout_height="wrap_content">
 
                     <RelativeLayout
+                        android:id="@+id/me_layout_work"
                         android:layout_width="match_parent"
                         android:layout_height="@dimen/dp_50"
                         android:layout_margin="@dimen/dp_2"
@@ -230,6 +231,7 @@
                     </RelativeLayout>
 
                     <RelativeLayout
+                        android:id="@+id/me_layout_sport"
                         android:background="@color/white"
                         android:layout_margin="@dimen/dp_2"
                         android:orientation="horizontal"
@@ -265,6 +267,7 @@
                             android:layout_height="@dimen/dp_30"/>
                     </RelativeLayout>
                     <RelativeLayout
+                        android:id="@+id/me_layout_moeny"
                         android:background="@color/white"
                         android:layout_margin="@dimen/dp_2"
                         android:orientation="horizontal"
@@ -300,6 +303,7 @@
                             android:layout_height="@dimen/dp_30"/>
                     </RelativeLayout>
                     <RelativeLayout
+                        android:id="@+id/me_layout_parent"
                         android:background="@color/white"
                         android:layout_margin="@dimen/dp_2"
                         android:orientation="horizontal"
@@ -334,6 +338,7 @@
                             android:layout_height="@dimen/dp_30"/>
                     </RelativeLayout>
                     <RelativeLayout
+                        android:id="@+id/me_layout_nowchat"
                         android:background="@color/white"
                         android:layout_margin="@dimen/dp_2"
                         android:orientation="horizontal"
@@ -369,6 +374,7 @@
                     </RelativeLayout>
 
                     <RelativeLayout
+                        android:id="@+id/me_layout_setting"
                         android:background="@color/white"
                         android:layout_margin="@dimen/dp_2"
                         android:orientation="horizontal"
