@@ -7,7 +7,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="@dimen/dp_50"
-        android:background="#D4DFDE"
+        android:background="#DEDEDE"
         android:orientation="horizontal">
 
         <ImageView
@@ -28,7 +28,6 @@
     </LinearLayout>
 
     <RelativeLayout
-        android:padding="@dimen/dp_10"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/dp_20"
@@ -42,14 +41,13 @@
             android:text="订单编号：" />
 
         <TextView
-            android:layout_toRightOf="@id/bianhao"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/bianhao"
             android:text="23232323" />
     </RelativeLayout>
 
     <RelativeLayout
-        android:padding="@dimen/dp_10"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/dp_5"
@@ -63,10 +61,10 @@
             android:text="快递单号：" />
 
         <TextView
-            android:layout_toRightOf="@id/dingdan"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="@dimen/dp_5"
+            android:layout_toRightOf="@id/dingdan"
             android:text="12345678" />
 
         <TextView
@@ -80,10 +78,339 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#DEE6E6" />
+        android:layout_marginTop="@dimen/dp_15"
+        android:background="#DEDEDE" />
 
-    <ImageView
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:src="@mipmap/zjlimg2" />
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_marginTop="@dimen/dp_20"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/shou"
+                android:layout_width="@dimen/dp_30"
+                android:layout_height="@dimen/dp_30"
+                android:layout_marginLeft="@dimen/dp_50"
+                android:layout_marginTop="@dimen/dp_20"
+                android:background="@drawable/yuan_2"
+                android:gravity="center"
+                android:text="收"
+                android:textColor="#FFFFFF" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_marginTop="@dimen/dp_20"
+                android:layout_toRightOf="@id/shou"
+                android:text="[收货地址] 北京市朝阳区朝阳大街\n朝阳大厦2323-2323"></TextView>
+
+            <View
+                android:id="@+id/shuxian1"
+                android:layout_width="1dp"
+                android:layout_height="@dimen/dp_50"
+                android:layout_below="@id/shou"
+                android:layout_marginLeft="@dimen/dp_65"
+                android:layout_marginTop="@dimen/dp_5"
+                android:background="#000000" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_marginLeft="@dimen/dp_20"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_17"
+                android:text="02-02" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_17"
+                android:layout_marginTop="@dimen/dp_15"
+                android:text="12:01" />
+
+            <TextView
+                android:id="@+id/shou2"
+                android:layout_width="@dimen/dp_10"
+                android:layout_height="@dimen/dp_10"
+                android:layout_marginLeft="@dimen/dp_60"
+                android:layout_marginTop="@dimen/dp_10"
+                android:background="@drawable/yuan_3" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_marginBottom="@dimen/dp_10"
+                android:layout_toRightOf="@id/shou2"
+                android:text="已签收"
+                android:textColor="#000000"
+                android:textSize="@dimen/dp_15" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_marginTop="@dimen/dp_20"
+                android:layout_toRightOf="@id/shou2"
+                android:text="您的订单已签收，感谢您对Hi优选的选择，欢迎再次\n光临"
+                android:textSize="@dimen/dp_10" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="@dimen/dp_50"
+                android:layout_below="@id/shou2"
+                android:layout_marginLeft="@dimen/dp_65"
+                android:layout_marginTop="@dimen/dp_5"
+                android:background="#000000" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_marginLeft="@dimen/dp_20"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_17"
+                android:text="02-02" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_17"
+                android:layout_marginTop="@dimen/dp_15"
+                android:text="12:01" />
+
+            <TextView
+                android:id="@+id/shou3"
+                android:layout_width="@dimen/dp_10"
+                android:layout_height="@dimen/dp_10"
+                android:layout_marginLeft="@dimen/dp_60"
+                android:layout_marginTop="@dimen/dp_10"
+                android:background="@drawable/yuan_3" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_marginBottom="@dimen/dp_10"
+                android:layout_toRightOf="@id/shou3"
+                android:text="派送中"
+                android:textColor="#000000"
+                android:textSize="@dimen/dp_15" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_marginTop="@dimen/dp_20"
+                android:layout_toRightOf="@id/shou3"
+                android:text="已安排送货，请您做好收获准备，快递小哥【吴三\n桂 18759304056】"
+                android:textSize="@dimen/dp_10" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="@dimen/dp_50"
+                android:layout_below="@id/shou3"
+                android:layout_marginLeft="@dimen/dp_65"
+                android:layout_marginTop="@dimen/dp_5"
+                android:background="#000000" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_marginLeft="@dimen/dp_20"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_17"
+                android:text="02-03" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_17"
+                android:layout_marginTop="@dimen/dp_15"
+                android:text="01:01" />
+
+            <TextView
+                android:id="@+id/shou4"
+                android:layout_width="@dimen/dp_10"
+                android:layout_height="@dimen/dp_10"
+                android:layout_marginLeft="@dimen/dp_60"
+                android:layout_marginTop="@dimen/dp_10"
+                android:background="@drawable/yuan_3" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_marginTop="@dimen/dp_10"
+                android:layout_toRightOf="@id/shou4"
+                android:text="您的商品已在 【上海总分拨中心】完成扫描，并发往\n下一站【顺丰南京分拨中心】"
+                android:textSize="@dimen/dp_10" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="@dimen/dp_50"
+                android:layout_below="@id/shou4"
+                android:layout_marginLeft="@dimen/dp_65"
+                android:layout_marginTop="@dimen/dp_5"
+                android:background="#000000" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_marginLeft="@dimen/dp_20"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_17"
+                android:text="02-02" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_17"
+                android:layout_marginTop="@dimen/dp_15"
+                android:text="12:01" />
+
+            <TextView
+                android:id="@+id/shou5"
+                android:layout_width="@dimen/dp_10"
+                android:layout_height="@dimen/dp_10"
+                android:layout_marginLeft="@dimen/dp_60"
+                android:layout_marginTop="@dimen/dp_10"
+                android:background="@drawable/yuan_3" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_marginBottom="@dimen/dp_10"
+                android:layout_toRightOf="@id/shou5"
+                android:text="已揽件"
+                android:textColor="#000000"
+                android:textSize="@dimen/dp_15" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_marginTop="@dimen/dp_20"
+                android:layout_toRightOf="@id/shou5"
+                android:text="包裹已揽收，到达【上海静安物流中心】"
+                android:textSize="@dimen/dp_10" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="@dimen/dp_50"
+                android:layout_below="@id/shou5"
+                android:layout_marginLeft="@dimen/dp_65"
+                android:layout_marginTop="@dimen/dp_5"
+                android:background="#000000" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_marginLeft="@dimen/dp_20"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_17"
+                android:text="02-02" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_17"
+                android:layout_marginTop="@dimen/dp_15"
+                android:text="10:42" />
+
+            <TextView
+                android:id="@+id/shou6"
+                android:layout_width="@dimen/dp_10"
+                android:layout_height="@dimen/dp_10"
+                android:layout_marginLeft="@dimen/dp_60"
+                android:layout_marginTop="@dimen/dp_10"
+                android:background="@drawable/yuan_3" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_marginTop="@dimen/dp_10"
+                android:layout_toRightOf="@id/shou6"
+                android:text="确认成功，仓库准备出库"
+                android:textSize="@dimen/dp_10" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="@dimen/dp_50"
+                android:layout_below="@id/shou6"
+                android:layout_marginLeft="@dimen/dp_65"
+                android:layout_marginTop="@dimen/dp_5"
+                android:background="#000000" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_marginLeft="@dimen/dp_20"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_17"
+                android:text="02-02" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_17"
+                android:layout_marginTop="@dimen/dp_15"
+                android:text="10:41" />
+
+            <TextView
+                android:id="@+id/shou7"
+                android:layout_width="@dimen/dp_10"
+                android:layout_height="@dimen/dp_10"
+                android:layout_marginLeft="@dimen/dp_60"
+                android:layout_marginTop="@dimen/dp_10"
+                android:background="@drawable/yuan_3" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_marginTop="@dimen/dp_10"
+                android:layout_toRightOf="@id/shou7"
+                android:text="您提交了订单，请等待系统确认"
+                android:textSize="@dimen/dp_10" />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
 </LinearLayout>

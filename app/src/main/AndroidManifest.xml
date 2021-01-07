@@ -23,19 +23,19 @@
         <activity android:name=".axl.AboutActivity" />
         <activity android:name=".axl.IdentityActivity" />
         <activity android:name=".axl.SettlementActivity" />
-        <activity android:name=".OneActivity"/>
-
-
-        <activity android:name=".MainActivity">
-
+        <activity android:name=".OneActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".MainActivity">
+
+        </activity>
 
         <activity android:name=".zyz.order.ZOrderActivity">
+
         </activity>
         <activity android:name=".zyz.personal.PersonalActivity">
 
@@ -59,7 +59,10 @@
         <activity android:name=".psy.ui.WorkActivity">
 
         </activity>
-        <activity android:name=".psy.ui.MeAcyivity"/> >
+        <activity android:name=".psy.ui.MeAcyivity" >
+
+        </activity>
+
 
         <activity android:name=".zzx.LogisActivity"></activity>
         <activity android:name=".zzx.LeaveActivity" />
@@ -67,9 +70,6 @@
         <activity android:name=".zzx.RankingActivity" />
         <activity android:name=".base.BaseActivity" />
         <activity android:name=".zjl.ui.IssueActivity"/>
-        <meta-data
-            android:name="android.webkit.WebView.EnableSafeBrowsing"
-            android:value="true" />
 
     </application>
 

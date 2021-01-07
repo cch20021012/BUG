@@ -54,13 +54,7 @@ public class ParticularsActivity extends BaseActivity {
             }
         });
 
-        //返回
-        particulars_img.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(ParticularsActivity.this,HomeFragment.class));
-            }
-        });
+
     }
 
     @Override

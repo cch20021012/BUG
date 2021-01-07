@@ -1,6 +1,8 @@
 package com.example.gug.axl;
 
 import android.content.Intent;
+import android.view.View;
+import android.widget.ImageView;
 
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -9,6 +11,7 @@ import com.example.gug.R;
 import com.example.gug.base.BaseAdapter;
 import com.example.gug.base.BaseFragment;
 import com.example.gug.interfaces.IBasePresenter;
+import com.example.gug.zjl.ui.IssueActivity;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -24,6 +27,8 @@ public class HomePageFragment extends BaseFragment {
     RecyclerView freeclass;
     @BindView(R.id.onetooneclass)
     RecyclerView onetooneclass;
+    @BindView(R.id.imageclass)
+    ImageView imageclass;
     private List<TeacherBean> teacherlist;
     private List<LiveStreamBean> livelist;
     private List<FreeClassBean> freeclasslist;
@@ -38,7 +43,8 @@ public class HomePageFragment extends BaseFragment {
     protected IBasePresenter createPrenter() {
         return null;
     }
-//    R.mipmap.teacher,"钢琴|声乐","李明宇"
+
+    //    R.mipmap.teacher,"钢琴|声乐","李明宇"
     @Override
     protected void initView() {
         teacherlist = new ArrayList<>();
@@ -71,39 +77,47 @@ public class HomePageFragment extends BaseFragment {
             musicBean.setImage(R.mipmap.music);
             musiclist.add(musicBean);
         }
+
+        //跳转问题
+        imageclass.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getActivity(), IssueActivity.class));
+            }
+        });
     }
 
     @Override
     protected void initData() {
-        teacherrecyclerview.setLayoutManager(new LinearLayoutManager(getActivity(),RecyclerView.HORIZONTAL,false));
-        TeacherAdapter teacherAdapter = new TeacherAdapter(getActivity(),teacherlist);
+        teacherrecyclerview.setLayoutManager(new LinearLayoutManager(getActivity(), RecyclerView.HORIZONTAL, false));
+        TeacherAdapter teacherAdapter = new TeacherAdapter(getActivity(), teacherlist);
         teacherrecyclerview.setAdapter(teacherAdapter);
         teacherAdapter.notifyDataSetChanged();
 
-        livestreamrecyclerview.setLayoutManager(new LinearLayoutManager(getActivity(),RecyclerView.HORIZONTAL,false));
-        LiveAdapter liveAdapter = new LiveAdapter(getActivity(),livelist);
+        livestreamrecyclerview.setLayoutManager(new LinearLayoutManager(getActivity(), RecyclerView.HORIZONTAL, false));
+        LiveAdapter liveAdapter = new LiveAdapter(getActivity(), livelist);
         livestreamrecyclerview.setAdapter(liveAdapter);
         liveAdapter.notifyDataSetChanged();
         liveAdapter.addListClick(new BaseAdapter.IListClick() {
             @Override
             public void itemClick(int pos) {
-                startActivity(new Intent(getActivity(),SettlementActivity.class));
+                startActivity(new Intent(getActivity(), SettlementActivity.class));
             }
         });
         liveAdapter.addItemViewClick(new BaseAdapter.IItemViewClick() {
             @Override
             public void itemViewClick(int viewid, Object data) {
-                startActivity(new Intent(getActivity(),SettlementActivity.class));
+                startActivity(new Intent(getActivity(), SettlementActivity.class));
             }
         });
 
-        freeclass.setLayoutManager(new LinearLayoutManager(getActivity(),RecyclerView.HORIZONTAL,false));
-        FreeclassAdapter freeclassAdapter = new FreeclassAdapter(getActivity(),freeclasslist);
+        freeclass.setLayoutManager(new LinearLayoutManager(getActivity(), RecyclerView.HORIZONTAL, false));
+        FreeclassAdapter freeclassAdapter = new FreeclassAdapter(getActivity(), freeclasslist);
         freeclass.setAdapter(freeclassAdapter);
         freeclassAdapter.notifyDataSetChanged();
 
-        onetooneclass.setLayoutManager(new LinearLayoutManager(getActivity(),RecyclerView.HORIZONTAL,false));
-        OnetooneclassAdapter onetooneclassAdapter = new OnetooneclassAdapter(getActivity(),musiclist);
+        onetooneclass.setLayoutManager(new LinearLayoutManager(getActivity(), RecyclerView.HORIZONTAL, false));
+        OnetooneclassAdapter onetooneclassAdapter = new OnetooneclassAdapter(getActivity(), musiclist);
         onetooneclass.setAdapter(onetooneclassAdapter);
         onetooneclassAdapter.notifyDataSetChanged();
     }

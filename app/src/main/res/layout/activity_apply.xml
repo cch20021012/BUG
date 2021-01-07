@@ -118,11 +118,12 @@
             android:orientation="horizontal">
 
             <TextView
+
                 android:padding="@dimen/dp_10"
                 android:id="@+id/apply_name"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_marginLeft="@dimen/dp_20"
                 android:layout_marginTop="@dimen/dp_20"
                 android:gravity="center"
                 android:text="姓名"
@@ -134,13 +135,14 @@
                 android:padding="@dimen/dp_10"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="@dimen/dp_5"
+                android:layout_marginLeft="@dimen/dp_25"
                 android:layout_marginTop="@dimen/dp_20"
                 android:gravity="center"
                 android:text="*"
                 android:textColor="#EF0808" />
 
             <EditText
+                android:layout_marginLeft="@dimen/dp_20"
                 android:layout_toRightOf="@id/xing"
                 android:padding="@dimen/dp_10"
                 android:background="@null"
@@ -178,7 +180,7 @@
                 android:id="@+id/apply_age"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_marginLeft="@dimen/dp_20"
                 android:layout_marginTop="@dimen/dp_20"
                 android:gravity="center"
                 android:text="年龄"
@@ -189,7 +191,7 @@
                 android:padding="@dimen/dp_10"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="@dimen/dp_5"
+                android:layout_marginLeft="@dimen/dp_25"
                 android:layout_marginTop="@dimen/dp_20"
                 android:gravity="center"
                 android:text="*"
@@ -200,11 +202,11 @@
                 android:layout_toRightOf="@id/xing2"
                 android:padding="@dimen/dp_10"
                 android:background="@null"
+                android:layout_marginLeft="@dimen/dp_20"
                 android:id="@+id/apply_et_age"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/dp_20"
-
                 android:hint="请填写参赛者年龄"
                 android:maxLength="500" />
 
@@ -272,7 +274,7 @@
                 android:id="@+id/apply_et_phone"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="@dimen/dp_35"
+                android:layout_marginLeft="@dimen/dp_20"
                 android:layout_marginTop="@dimen/dp_20"
                 android:hint="请填写参赛者电话" />
 
@@ -329,7 +331,7 @@
                 android:id="@+id/apply_et_tracks"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="@dimen/dp_35"
+                android:layout_marginLeft="@dimen/dp_20"
                 android:layout_marginTop="@dimen/dp_20"
                 android:hint="请填写参赛者姓名" />
 
