@@ -12,6 +12,7 @@ import android.widget.TextView;
 import androidx.constraintlayout.widget.ConstraintLayout;
 
 import com.example.gug.R;
+import com.example.gug.axl.AskActivity;
 import com.example.gug.base.BaseFragment;
 import com.example.gug.interfaces.IBasePresenter;
 import com.example.gug.zjl.ui.navigation.CollectAtcivity;
@@ -106,6 +107,8 @@ public class MeFragment extends BaseFragment implements View.OnClickListener {
     LinearLayout meLayoutNowchat;
     @BindView(R.id.me_layout_setting)
     LinearLayout meLayoutSetting;
+    @BindView(R.id.ll_guan)
+    LinearLayout llGuan;
 
 
     @Override
@@ -175,4 +178,8 @@ public class MeFragment extends BaseFragment implements View.OnClickListener {
         }
     }
 
+    @OnClick(R.id.ll_guan)
+    public void onViewClicked() {
+        startActivity(new Intent(getActivity(), AskActivity.class));
+    }
 }

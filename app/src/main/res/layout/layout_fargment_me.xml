@@ -160,6 +160,7 @@
 
 
                     <LinearLayout
+                        android:id="@+id/ll_guan"
                         android:layout_weight="1"
                         android:layout_width="0dp"
                         android:orientation="vertical"

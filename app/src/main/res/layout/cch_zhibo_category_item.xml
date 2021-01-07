@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout android:background="@drawable/cch_shape_category"
-    android:gravity="center"
     android:layout_marginTop="@dimen/dp_10"
     xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="@dimen/dp_175"
-    android:layout_height="@dimen/dp_80"
+    android:layout_width="@dimen/dp_160"
+    android:layout_height="@dimen/dp_70"
     xmlns:app="http://schemas.android.com/apk/res-auto">
     <ImageView
-        android:layout_width="@dimen/dp_40"
-        android:layout_height="@dimen/dp_40"
+        android:layout_width="@dimen/dp_35"
+        android:layout_height="@dimen/dp_35"
         android:src="@drawable/zxc"
         android:id="@+id/img_pic"
         app:layout_constraintTop_toTopOf="parent"
