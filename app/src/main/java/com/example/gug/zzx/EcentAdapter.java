@@ -35,6 +35,7 @@ public class EcentAdapter extends BaseAdapter {
         imgBig.setImageResource(bean.getId());
         txt_title.setText(bean.getTitle());
         txt_content.setText(bean.getContent());
+        //报名
         btnCommit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

@@ -1,5 +1,6 @@
 package com.example.gug;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -54,6 +55,11 @@ public class MainActivity extends AppCompatActivity {
         tl_main.getTabAt(1).setText("课程").setIcon(R.drawable.class_select_item);
         tl_main.getTabAt(2).setText("活动").setIcon(R.drawable.activity_select_item);
         tl_main.getTabAt(3).setText("我的").setIcon(R.drawable.me_select_item);
+
+        Intent intent = getIntent();
+        int name = intent.getIntExtra("name", 0);
+        vp_main.setCurrentItem(name);
+
 
     }
 }

@@ -1,370 +1,405 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
 
     <LinearLayout
+        android:layout_marginTop="@dimen/dp_30"
         android:layout_width="match_parent"
-        android:orientation="vertical"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
-
-    <TextView
-        android:id="@+id/apply_bisai"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:padding="@dimen/dp_10"
-        android:text="活动主题：全国线上钢琴比赛"
-        android:textColor="#020202" />
-
-    <TextView
-        android:id="@+id/apply_title"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="@dimen/dp_10"
-        android:layout_marginTop="@dimen/dp_10"
-        android:text="活动主题活动主题活动主题活动主题活动主题活动主题" />
-
-    <TextView
-        android:id="@+id/apply_title2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="@dimen/dp_10"
-        android:text="动主题活动主题活动主题" />
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
 
         <TextView
-            android:id="@+id/apply_time1"
-            android:layout_width="wrap_content"
+            android:textSize="@dimen/dp_20"
+            android:id="@+id/apply_bisai"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_10"
+            android:padding="@dimen/dp_10"
+            android:text="活动主题：全国线上钢琴比赛"
+            android:textColor="#020202" />
+
+        <TextView
+            android:id="@+id/apply_title"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="@dimen/dp_10"
-            android:layout_marginTop="@dimen/dp_20"
-            android:gravity="center"
-            android:text="活动时间"
-            android:textColor="#0C0C0C" />
+            android:layout_marginTop="@dimen/dp_10"
+            android:text="活动主题活动主题活动主题活动主题活动主题活动主题" />
 
         <TextView
-            android:id="@+id/apply_time2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="@dimen/dp_80"
-            android:layout_marginTop="@dimen/dp_20"
-            android:gravity="center"
-            android:text="截止报名"
-            android:textColor="#0C0C0C" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-
-        <TextView
-            android:id="@+id/apply_time3"
-            android:layout_width="wrap_content"
+            android:id="@+id/apply_title2"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="@dimen/dp_10"
-            android:layout_marginTop="@dimen/dp_20"
-            android:gravity="center"
-            android:text="2020-08-08" />
+            android:text="动主题活动主题活动主题" />
 
-        <TextView
-            android:id="@+id/apply_time4"
-            android:layout_width="wrap_content"
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="@dimen/dp_60"
-            android:layout_marginTop="@dimen/dp_20"
-            android:gravity="center"
-            android:text="2020-08-26" />
-    </LinearLayout>
+            android:orientation="horizontal">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
+            <TextView
+                android:id="@+id/apply_time1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_marginTop="@dimen/dp_20"
+                android:gravity="center"
+                android:text="活动时间"
+                android:textColor="#0C0C0C" />
 
-        <TextView
-            android:id="@+id/apply_price1"
-            android:layout_width="wrap_content"
+            <TextView
+                android:id="@+id/apply_time2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_80"
+                android:layout_marginTop="@dimen/dp_20"
+                android:gravity="center"
+                android:text="截止报名"
+                android:textColor="#0C0C0C" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="@dimen/dp_10"
-            android:layout_marginTop="@dimen/dp_20"
-            android:gravity="center"
-            android:text="报名费"
-            android:textColor="#101010" />
+            android:orientation="horizontal">
 
-        <TextView
-            android:id="@+id/apply_price2"
-            android:layout_width="wrap_content"
+            <TextView
+                android:id="@+id/apply_time3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_marginTop="@dimen/dp_20"
+                android:gravity="center"
+                android:text="2020-08-08" />
+
+            <TextView
+                android:id="@+id/apply_time4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_60"
+                android:layout_marginTop="@dimen/dp_20"
+                android:gravity="center"
+                android:text="2020-08-26" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="@dimen/dp_250"
-            android:layout_marginTop="@dimen/dp_20"
-            android:gravity="center"
-            android:text="200"
-            android:textColor="#EF0808" />
-    </LinearLayout>
+            android:orientation="horizontal">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
+            <TextView
+                android:id="@+id/apply_price1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_marginTop="@dimen/dp_20"
+                android:gravity="center"
+                android:text="报名费"
+                android:textColor="#101010" />
 
-        <TextView
-            android:id="@+id/apply_name"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="@dimen/dp_10"
-            android:layout_marginTop="@dimen/dp_20"
-            android:gravity="center"
-            android:text="姓名"
-            android:textColor="#101010" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="@dimen/dp_5"
-            android:layout_marginTop="@dimen/dp_20"
-            android:gravity="center"
-            android:text="*"
-            android:textColor="#EF0808" />
-
-        <EditText
-            android:id="@+id/apply_et_name"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="@dimen/dp_60"
-            android:layout_marginTop="@dimen/dp_20"
-            android:hint="请填写参赛者姓名" />
-
-        <ImageView
-            android:id="@+id/apply_iv_nameimg"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="@dimen/dp_80"
-            android:layout_marginTop="@dimen/dp_20"
-            android:gravity="center"
-            android:src="@mipmap/youjiantou"
-            android:text="200"
-            android:textColor="#EF0808" />
-
-    </LinearLayout>
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:background="#C6B9B9" />
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-
-        <TextView
-            android:id="@+id/apply_age"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="@dimen/dp_10"
-            android:layout_marginTop="@dimen/dp_20"
-            android:gravity="center"
-            android:text="年龄"
-            android:textColor="#101010" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="@dimen/dp_5"
-            android:layout_marginTop="@dimen/dp_20"
-            android:gravity="center"
-            android:text="*"
-            android:textColor="#EF0808" />
-
-        <EditText
-            android:id="@+id/apply_et_age"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="@dimen/dp_60"
-            android:layout_marginTop="@dimen/dp_20"
-            android:hint="请填写参赛者年龄" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="@dimen/dp_5"
-            android:layout_marginTop="@dimen/dp_20"
-            android:text="岁"
-            android:textColor="#151515" />
-
-        <ImageView
-            android:id="@+id/apply_iv_ageimg"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="@dimen/dp_65"
-            android:layout_marginTop="@dimen/dp_20"
-            android:gravity="center"
-            android:src="@mipmap/youjiantou"
-            android:text="200"
-            android:textColor="#EF0808" />
-
-    </LinearLayout>
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:background="#C6B9B9" />
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-
-        <TextView
-            android:id="@+id/apply_phone"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="@dimen/dp_10"
-            android:layout_marginTop="@dimen/dp_20"
-            android:gravity="center"
-            android:text="联系电话"
-            android:textColor="#101010" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="@dimen/dp_5"
-            android:layout_marginTop="@dimen/dp_20"
-            android:gravity="center"
-            android:text="*"
-            android:textColor="#EF0808" />
-
-        <EditText
-            android:id="@+id/apply_et_phone"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="@dimen/dp_35"
-            android:layout_marginTop="@dimen/dp_20"
-            android:hint="请填写参赛者电话" />
-
-        <ImageView
-            android:id="@+id/apply_iv_phoneimg"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="@dimen/dp_80"
-            android:layout_marginTop="@dimen/dp_20"
-            android:gravity="center"
-            android:src="@mipmap/youjiantou"
-            android:text="200"
-            android:textColor="#EF0808" />
-
-    </LinearLayout>
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:background="#C6B9B9" />
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-
-        <TextView
-            android:id="@+id/apply_tracks"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="@dimen/dp_10"
-            android:layout_marginTop="@dimen/dp_20"
-            android:gravity="center"
-            android:text="参赛曲目"
-            android:textColor="#101010" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="@dimen/dp_5"
-            android:layout_marginTop="@dimen/dp_20"
-            android:gravity="center"
-            android:text="*"
-            android:textColor="#EF0808" />
-
-        <EditText
-            android:id="@+id/apply_et_tracks"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="@dimen/dp_35"
-            android:layout_marginTop="@dimen/dp_20"
-            android:hint="请填写参赛者姓名" />
-
-        <ImageView
-            android:id="@+id/apply_iv_tracksimg"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="@dimen/dp_80"
-            android:layout_marginTop="@dimen/dp_20"
-            android:gravity="center"
-            android:src="@mipmap/youjiantou"
-            android:text="200"
-            android:textColor="#EF0808" />
-
-    </LinearLayout>
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:background="#C6B9B9" />
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-
-        <ImageView
-            android:id="@+id/apply_img_1"
-            android:layout_width="@dimen/dp_80"
-            android:layout_height="@dimen/dp_80"
-            android:layout_marginLeft="@dimen/dp_20"
-            android:src="@mipmap/apply1" />
+            <TextView
+                android:id="@+id/apply_price2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_250"
+                android:layout_marginTop="@dimen/dp_20"
+                android:gravity="center"
+                android:text="200"
+                android:textColor="#EF0808" />
+        </LinearLayout>
 
         <RelativeLayout
-            android:layout_width="@dimen/dp_120"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            >
-            <ImageView
-                android:id="@+id/apply_img_2"
-                android:layout_width="@dimen/dp_100"
-                android:layout_height="@dimen/dp_80"
-                android:layout_marginLeft="@dimen/dp_20"
-                android:src="@mipmap/xuxian" />
+            android:orientation="horizontal">
+
+            <TextView
+                android:padding="@dimen/dp_10"
+                android:id="@+id/apply_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_marginTop="@dimen/dp_20"
+                android:gravity="center"
+                android:text="姓名"
+                android:textColor="#101010" />
+
+            <TextView
+                android:id="@+id/xing"
+                android:layout_toRightOf="@id/apply_name"
+                android:padding="@dimen/dp_10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_5"
+                android:layout_marginTop="@dimen/dp_20"
+                android:gravity="center"
+                android:text="*"
+                android:textColor="#EF0808" />
+
+            <EditText
+                android:layout_toRightOf="@id/xing"
+                android:padding="@dimen/dp_10"
+                android:background="@null"
+                android:id="@+id/apply_et_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_20"
+                android:hint="请填写参赛者姓名" />
 
             <ImageView
-                android:id="@+id/apply_img_3"
-                android:layout_width="@dimen/dp_20"
-                android:layout_height="@dimen/dp_20"
-                android:layout_centerVertical="true"
-                android:layout_marginLeft="@dimen/dp_60"
-                android:src="@mipmap/jia" />
+                android:layout_alignParentRight="true"
+                android:id="@+id/apply_iv_nameimg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_20"
+                android:gravity="center"
+                android:src="@mipmap/youjiantou"
+                android:text="200"
+                android:textColor="#EF0808" />
+
         </RelativeLayout>
 
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#C6B9B9" />
 
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:padding="@dimen/dp_10"
+                android:id="@+id/apply_age"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_marginTop="@dimen/dp_20"
+                android:gravity="center"
+                android:text="年龄"
+                android:textColor="#101010" />
+
+            <TextView
+                android:layout_toRightOf="@id/apply_age"
+                android:padding="@dimen/dp_10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_5"
+                android:layout_marginTop="@dimen/dp_20"
+                android:gravity="center"
+                android:text="*"
+                android:id="@+id/xing2"
+                android:textColor="#EF0808" />
+
+            <EditText
+                android:layout_toRightOf="@id/xing2"
+                android:padding="@dimen/dp_10"
+                android:background="@null"
+                android:id="@+id/apply_et_age"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_20"
+
+                android:hint="请填写参赛者年龄"
+                android:maxLength="500" />
+
+            <TextView
+                android:layout_toRightOf="@id/apply_et_age"
+                android:paddingTop="@dimen/dp_10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_5"
+                android:layout_marginTop="@dimen/dp_20"
+                android:text="岁"
+                android:textColor="#151515" />
+
+            <ImageView
+                android:layout_alignParentRight="true"
+                android:id="@+id/apply_iv_ageimg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_20"
+                android:gravity="center"
+                android:src="@mipmap/youjiantou"
+                android:text="200"
+                android:textColor="#EF0808" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#C6B9B9" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:padding="@dimen/dp_10"
+                android:id="@+id/apply_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_marginTop="@dimen/dp_20"
+                android:gravity="center"
+                android:text="联系电话"
+                android:textColor="#101010" />
+
+            <TextView
+                android:id="@+id/xing3"
+                android:padding="@dimen/dp_10"
+                android:layout_toRightOf="@id/apply_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_5"
+                android:layout_marginTop="@dimen/dp_20"
+                android:gravity="center"
+                android:text="*"
+                android:textColor="#EF0808" />
+<!--            //输入电话号码-->
+            <EditText
+                android:layout_toRightOf="@id/xing3"
+                android:padding="@dimen/dp_10"
+                android:background="@null"
+                android:phoneNumber="true"
+                android:id="@+id/apply_et_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_35"
+                android:layout_marginTop="@dimen/dp_20"
+                android:hint="请填写参赛者电话" />
+
+            <ImageView
+                android:layout_alignParentRight="true"
+                android:id="@+id/apply_iv_phoneimg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_20"
+                android:gravity="center"
+                android:src="@mipmap/youjiantou"
+                android:text="200"
+                android:textColor="#EF0808" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#C6B9B9" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:padding="@dimen/dp_10"
+                android:id="@+id/apply_tracks"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_marginTop="@dimen/dp_20"
+                android:gravity="center"
+                android:text="参赛曲目"
+                android:textColor="#101010" />
+
+            <TextView
+                android:padding="@dimen/dp_10"
+                android:layout_toRightOf="@id/apply_tracks"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_5"
+                android:layout_marginTop="@dimen/dp_20"
+                android:gravity="center"
+                android:text="*"
+                android:id="@+id/xing4"
+                android:textColor="#EF0808" />
+
+            <EditText
+                android:layout_toRightOf="@+id/xing4"
+                android:padding="@dimen/dp_10"
+                android:background="@null"
+                android:id="@+id/apply_et_tracks"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_35"
+                android:layout_marginTop="@dimen/dp_20"
+                android:hint="请填写参赛者姓名" />
+
+            <ImageView
+                android:layout_alignParentRight="true"
+                android:id="@+id/apply_iv_tracksimg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_80"
+                android:layout_marginTop="@dimen/dp_20"
+                android:gravity="center"
+                android:src="@mipmap/youjiantou"
+                android:text="200"
+                android:textColor="#EF0808" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#C6B9B9" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/apply_img_1"
+                android:layout_width="@dimen/dp_80"
+                android:layout_height="@dimen/dp_80"
+                android:layout_marginLeft="@dimen/dp_20"
+                android:src="@mipmap/apply1" />
+
+            <RelativeLayout
+                android:layout_width="@dimen/dp_120"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/apply_img_2"
+                    android:layout_width="@dimen/dp_100"
+                    android:layout_height="@dimen/dp_80"
+                    android:layout_marginLeft="@dimen/dp_20"
+                    android:src="@mipmap/xuxian" />
+
+                <ImageView
+                    android:id="@+id/apply_img_3"
+                    android:layout_width="@dimen/dp_20"
+                    android:layout_height="@dimen/dp_20"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dp_60"
+                    android:src="@mipmap/jia" />
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#C6B9B9" />
+
+        <Button
+            android:id="@+id/apply_bton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/dp_70"
+            android:background="@drawable/z1_selector_yuan"
+            android:text="点击报名"
+            android:textColor="#EFF4F4" />
     </LinearLayout>
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:background="#C6B9B9" />
-
-    <Button
-        android:id="@+id/apply_bton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginTop="@dimen/dp_40"
-        android:background="@drawable/z1_selector_yuan"
-        android:text="点击报名"
-        android:textColor="#EFF4F4" />
-    </LinearLayout>
-</androidx.core.widget.NestedScrollView>
+</LinearLayout>
