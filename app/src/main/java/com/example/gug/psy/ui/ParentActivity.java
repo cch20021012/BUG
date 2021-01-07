@@ -41,6 +41,7 @@ public class ParentActivity extends BaseActivity implements View.OnClickListener
     @BindView(R.id.rl_parent)
     RecyclerView rlParent;
     private boolean isOpen;
+
     @Override
     protected int getLayout() {
         return R.layout.activity_parent;
