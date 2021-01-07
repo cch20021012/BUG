@@ -4,6 +4,8 @@
 
     <application
         android:allowBackup="true"
+        android:largeHeap="true"
+        android:hardwareAccelerated="false"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
@@ -21,10 +23,11 @@
         <activity android:name=".axl.AboutActivity" />
         <activity android:name=".axl.IdentityActivity" />
         <activity android:name=".axl.SettlementActivity" />
-        <activity android:name=".OneActivity">
+        <activity android:name=".OneActivity"/>
 
-        </activity>
+
         <activity android:name=".MainActivity">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -33,7 +36,6 @@
         </activity>
 
         <activity android:name=".zyz.order.ZOrderActivity">
-
         </activity>
         <activity android:name=".zyz.personal.PersonalActivity">
 
@@ -57,10 +59,7 @@
         <activity android:name=".psy.ui.WorkActivity">
 
         </activity>
-        <activity android:name=".psy.ui.MeAcyivity" >
-
-        </activity>
-
+        <activity android:name=".psy.ui.MeAcyivity"/> >
 
         <activity android:name=".zzx.LogisActivity"></activity>
         <activity android:name=".zzx.LeaveActivity" />
@@ -71,6 +70,7 @@
         <meta-data
             android:name="android.webkit.WebView.EnableSafeBrowsing"
             android:value="true" />
+
     </application>
 
 </manifest>

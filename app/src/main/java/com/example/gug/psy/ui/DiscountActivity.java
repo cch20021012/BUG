@@ -1,5 +1,6 @@
 package com.example.gug.psy.ui;
 
+import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -49,7 +50,12 @@ public class DiscountActivity extends BaseActivity {
 
     @Override
     protected void initView() {
-
+        ivReturn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
     }
 
     @Override

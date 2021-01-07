@@ -64,9 +64,7 @@ public class CollectAtcivity extends BaseActivity {
         collectImg.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(CollectAtcivity.this, MainActivity.class);
-                intent.putExtra("name",3);
-                startActivity(intent);
+               finish();
             }
         });
     }

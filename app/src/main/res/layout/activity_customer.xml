@@ -12,8 +12,8 @@
 
         <ImageView
             android:id="@+id/iv_back"
-            android:layout_width="@dimen/dp_10"
-            android:layout_height="@dimen/dp_10"
+            android:layout_width="@dimen/dp_20"
+            android:layout_height="@dimen/dp_20"
             android:layout_margin="@dimen/dp_20"
             android:src="@drawable/z_back"
             app:layout_constraintLeft_toLeftOf="parent"

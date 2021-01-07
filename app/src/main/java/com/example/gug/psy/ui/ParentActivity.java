@@ -40,6 +40,8 @@ public class ParentActivity extends BaseActivity implements View.OnClickListener
     ConstraintLayout layoutReserve;
     @BindView(R.id.rl_parent)
     RecyclerView rlParent;
+    @BindView(R.id.praent_back)
+    ImageView praentBack;
     private boolean isOpen;
 
     @Override
@@ -54,7 +56,12 @@ public class ParentActivity extends BaseActivity implements View.OnClickListener
 
     @Override
     protected void initView() {
-
+        praentBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
     }
 
 
@@ -62,8 +69,8 @@ public class ParentActivity extends BaseActivity implements View.OnClickListener
     protected void initData() {
         rlParent.setLayoutManager(new LinearLayoutManager(this));
         List<ParentBean> parentList = new ArrayList<>();
-        parentList.add(new ParentBean("钢琴一对一",98,"学习中","学习时长18个小时12分钟"));
-        parentList.add(new ParentBean("小提琴一对一",98,"学习中","学习时长18个小时12分钟"));
+        parentList.add(new ParentBean("钢琴一对一", 98, "学习中", "学习时长18个小时12分钟"));
+        parentList.add(new ParentBean("小提琴一对一", 98, "学习中", "学习时长18个小时12分钟"));
         ParentAdapter parentAdapter = new ParentAdapter(this, parentList);
         rlParent.setAdapter(parentAdapter);
     }
@@ -82,7 +89,7 @@ public class ParentActivity extends BaseActivity implements View.OnClickListener
                     isOpen = false;
                     ivOpen.setImageResource(R.mipmap.close);
                     tvOpen.setText("已关闭");
-                }else{
+                } else {
                     isOpen = true;
                     ivOpen.setImageResource(R.mipmap.open);
                     tvOpen.setText("已开启");
@@ -94,4 +101,10 @@ public class ParentActivity extends BaseActivity implements View.OnClickListener
         }
     }
 
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        // TODO: add setContentView(...) invocation
+        ButterKnife.bind(this);
+    }
 }

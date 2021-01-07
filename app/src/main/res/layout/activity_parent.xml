@@ -16,16 +16,17 @@
             app:layout_constraintTop_toTopOf="parent"
             android:layout_width="match_parent"
             android:layout_height="@dimen/dp_50">
+
             <ImageView
-                android:id="@+id/back"
+                android:id="@+id/praent_back"
                 android:layout_width="@dimen/dp_20"
                 android:layout_height="@dimen/dp_20"
+                android:layout_marginLeft="@dimen/dp_10"
                 android:scaleType="centerCrop"
-                app:layout_constraintTop_toTopOf="parent"
+                android:src="@drawable/left"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintLeft_toLeftOf="parent"
-                android:src="@drawable/left"
-                android:layout_marginLeft="@dimen/dp_10" />
+                app:layout_constraintTop_toTopOf="parent" />
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
