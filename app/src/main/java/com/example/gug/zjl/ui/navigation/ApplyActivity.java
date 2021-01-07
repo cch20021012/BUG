@@ -33,7 +33,6 @@ public class ApplyActivity extends BaseActivity implements View.OnClickListener 
 
     @Override
     protected void initView() {
-
         mTime4Apply = (TextView) findViewById(R.id.apply_time4);
         mPrice1Apply = (TextView) findViewById(R.id.apply_price1);
         mPrice2Apply = (TextView) findViewById(R.id.apply_price2);
@@ -54,7 +53,8 @@ public class ApplyActivity extends BaseActivity implements View.OnClickListener 
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.apply_bton:
-
+                //调到支付页面
+                startActivity(new Intent(ApplyActivity.this, CategoryActivity.class));
                 // TODO 21/01/04
                 break;
             default:

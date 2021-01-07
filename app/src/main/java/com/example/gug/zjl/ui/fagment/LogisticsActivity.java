@@ -31,12 +31,6 @@ public class LogisticsActivity extends BaseActivity {
 
     @Override
     protected void initView() {
-    orderformImg.setOnClickListener(new View.OnClickListener() {
-        @Override
-        public void onClick(View v) {
-            startActivity(new Intent(LogisticsActivity.this,ParticularsActivity.class));
-        }
-    });
     }
 
     @Override
