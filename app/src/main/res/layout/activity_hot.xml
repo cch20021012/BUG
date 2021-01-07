@@ -1,15 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:id="@+id/con"
     tools:context=".zzx.HotActivity">
-
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        >
     <ImageView
         android:id="@+id/img"
         android:layout_width="match_parent"
-        android:layout_height="250dp"
+        android:layout_height="@dimen/dp_180"
         android:scaleType="centerCrop"
         android:src="@mipmap/shijian"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -19,14 +23,30 @@
         android:id="@+id/title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="30dp"
-        android:layout_marginTop="30dp"
+        android:layout_marginLeft="@dimen/dp_30"
+        android:layout_marginTop="@dimen/dp_30"
         android:text="声乐系统课"
         android:textColor="#000000"
-        android:textSize="35sp"
+        android:textSize="@dimen/sp_20"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toBottomOf="@id/img" />
-
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/img_shang"
+            app:layout_constraintTop_toBottomOf="@id/img"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginRight="@dimen/dp_60"
+            />
+        <ImageView
+            android:layout_width="@dimen/dp_30"
+            android:layout_height="@dimen/sp_20"
+            android:layout_marginTop="@dimen/dp_2"
+            android:src="@mipmap/shou"
+            app:layout_constraintTop_toBottomOf="@id/img"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginRight="@dimen/dp_20"
+            />
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -45,7 +65,7 @@
         android:layout_marginTop="30dp"
         android:text="￥"
         android:textColor="#FF5722"
-        android:textSize="30sp"
+        android:textSize="@dimen/sp_16"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toBottomOf="@id/title" />
 
@@ -57,7 +77,8 @@
         android:layout_marginRight="30dp"
         android:text="299"
         android:textColor="#FF5722"
-        android:textSize="50dp"
+        android:textStyle="bold"
+        android:textSize="@dimen/sp_25"
         app:layout_constraintBottom_toBottomOf="@id/money"
         app:layout_constraintLeft_toRightOf="@id/money" />
 
@@ -65,53 +86,106 @@
         android:id="@+id/price2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="20dp"
+        android:layout_marginLeft="@dimen/dp_18"
         android:layout_marginTop="30dp"
         android:text="￥599"
         app:layout_constraintBottom_toBottomOf="@id/money"
         app:layout_constraintLeft_toRightOf="@id/price" />
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:layout_marginTop="20dp"
-        android:background="#FF5722"
-        android:gravity="center_vertical"
-        android:orientation="horizontal"
-        app:layout_constraintTop_toBottomOf="@id/money">
-
         <ImageView
             android:id="@+id/iv_shijian"
             android:layout_width="30dp"
             android:layout_height="30dp"
-            android:layout_marginLeft="30dp"
-            android:src="@mipmap/a"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
+            android:layout_marginLeft="@dimen/dp_150"
+            android:src="@mipmap/shijian2"
+            app:layout_constraintBottom_toBottomOf="@id/price"
+            app:layout_constraintLeft_toRightOf="@id/price" />
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
             android:text="20课"
-            android:textColor="#FFFFFF"
-            android:textSize="25dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintLeft_toRightOf="@id/iv_shijian"
-            app:layout_constraintTop_toTopOf="parent" />
-
+            android:textColor="#9E9E9E"
+            android:textSize="@dimen/sp_16"
+            app:layout_constraintBottom_toBottomOf="@id/iv_shijian"
+            app:layout_constraintLeft_toRightOf="@id/iv_shijian" />
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
-            android:text="18566人已购"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginLeft="@dimen/dp_50"
+            android:text="付费"
+            app:layout_constraintBottom_toBottomOf="@id/iv_shijian"
+            app:layout_constraintLeft_toRightOf="@id/iv_shijian"
             android:layout_marginRight="30dp"
-            android:textColor="#FFFFFF"
-            android:textSize="25dp" />
-    </androidx.constraintlayout.widget.ConstraintLayout>
+            android:textColor="#A8A5A5"
+            android:textSize="@dimen/sp_16" />
+       <com.google.android.material.tabs.TabLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           app:layout_constraintTop_toBottomOf="@id/price"
+           android:layout_marginTop="@dimen/dp_10"
+           android:id="@+id/tab"
+           android:background="#FF5722"
+           >
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+       </com.google.android.material.tabs.TabLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/tab"
+            android:src="@mipmap/back"
+            android:id="@+id/img_big"
+            android:scaleType="centerCrop"
+            />
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_2"
+            android:background="@drawable/shap_view_leave"
+            android:layout_marginTop="@dimen/dp_20"
+           app:layout_constraintTop_toBottomOf="@id/img_big"
+            />
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/recycler"
+            app:layout_constraintTop_toBottomOf="@id/view"
+            />
+        <Button
+            android:layout_width="@dimen/dp_200"
+            android:layout_height="wrap_content"
+            android:text="特价299.9季风币"
+            android:id="@+id/btn_shop"
+            android:textColor="#ffffff"
+            android:background="@drawable/shape"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginTop="@dimen/dp_20"
+            app:layout_constraintTop_toBottomOf="@id/recycler"
+            />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:id="@+id/btn_ll"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/recycler"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginTop="@dimen/dp_20"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:orientation="horizontal"
+            >
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/kefu"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="练习助教老师"
+                />
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>
