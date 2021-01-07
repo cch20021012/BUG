@@ -3,75 +3,204 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
+
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:background="@drawable/score"
         android:id="@+id/con_head"
-        app:layout_constraintTop_toTopOf="parent"
         android:layout_width="match_parent"
-        android:layout_height="@dimen/dp_350">
+        android:layout_height="wrap_content"
+        android:background="@drawable/score"
+        app:layout_constraintTop_toTopOf="parent">
+
 
         <ImageView
-            android:id="@+id/img_score"
-            android:src="@drawable/me_score"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"/>
-
-
-   <!-- <ImageView
-        android:id="@+id/iv_back"
-        android:layout_width="@dimen/dp_15"
-        android:layout_height="@dimen/dp_15"
-        android:layout_marginLeft="@dimen/dp_20"
-        android:layout_marginTop="@dimen/dp_20"
-        android:src="@drawable/z_back"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/tv_dd"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/dp_17"
-        android:text="我的积分"
-        android:textColor="#F6F0F0"
-        android:textSize="@dimen/sp_16"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-    <TextView
-        android:id="@+id/tv_rule"
-        android:text="？规则"
-        android:textColor="#F3F1F1"
-        app:layout_constraintTop_toTopOf="@id/tv_dd"
-        app:layout_constraintRight_toRightOf="parent"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+            android:id="@+id/iv_back"
+            android:layout_width="@dimen/dp_15"
+            android:layout_height="@dimen/dp_15"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_marginTop="@dimen/dp_20"
+            android:src="@drawable/z_back"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
+            android:id="@+id/tv_dd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_17"
+            android:text="我的积分"
+            android:textColor="#F6F0F0"
+            android:textSize="@dimen/sp_16"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
-            android:layout_marginTop="@dimen/dp_30"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_rule"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="？规则"
+            android:layout_marginRight="@dimen/dp_10"
+            android:textColor="#F3F1F1"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@id/tv_dd" />
+
+        <TextView
             android:id="@+id/tv_yuan1"
-            android:background="@drawable/yuan_1"
-            app:layout_constraintTop_toBottomOf="@id/tv_dd"
             android:layout_width="@dimen/dp_200"
-            android:layout_height="@dimen/dp_200"/>-->
+            android:layout_height="@dimen/dp_200"
+            android:layout_marginTop="@dimen/dp_30"
+            android:background="@drawable/yuan_1"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_dd" />
+
+        <TextView
+            android:id="@+id/tv_yuan2"
+            android:layout_width="@dimen/dp_160"
+            android:layout_height="@dimen/dp_160"
+            android:layout_marginTop="@dimen/dp_48"
+            android:background="@drawable/zyz_yuan2"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_dd" />
+
+        <TextView
+            android:id="@+id/tv_yuan3"
+            android:layout_width="@dimen/dp_140"
+            android:layout_height="@dimen/dp_140"
+            android:layout_marginTop="@dimen/dp_60"
+            android:background="@drawable/zyz_yuan3"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_dd" />
+
+
+        <TextView
+            android:id="@+id/tv_my_score"
+            style="@style/mypoints_toolbar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_20"
+            android:text="-积分-"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@id/tv_yuan3" />
+
+        <TextView
+            android:id="@+id/tv_two_hundrend"
+            style="@style/mypoints_toolbar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_5"
+            android:text="200"
+            android:textSize="@dimen/dp_30"
+            app:layout_constraintBottom_toBottomOf="@id/tv_yuan3"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@id/tv_yuan3" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_40"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:layout_marginTop="@dimen/dp_10"
+            android:layout_marginRight="@dimen/dp_20"
+            android:layout_marginBottom="@dimen/dp_10"
+            android:background="@drawable/zyz_shape_mypoints_radius"
+            android:paddingLeft="@dimen/dp_20"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_yuan1">
+
+            <ImageView
+                android:id="@+id/xiaoyu_mypoints_up"
+                android:layout_width="@dimen/dp_25"
+                android:layout_height="@dimen/dp_25"
+                android:src="@drawable/zyz_yellow_score"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/xiaoyu_mypoints_today"
+                style="@style/mypoints_today_integrate"
+                android:text="今日积分"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toRightOf="@+id/xiaoyu_mypoints_up"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/xiaoyu_mypoints_today_integrate"
+                style="@style/mypoints_today_integrate"
+                android:text="68"
+                android:textSize="@dimen/dp_16"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toRightOf="@+id/xiaoyu_mypoints_today"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <View
+                android:id="@+id/xiaoyu_mypoints_view"
+                android:layout_width="@dimen/dp_1"
+                android:layout_height="@dimen/dp_20"
+                android:layout_marginRight="@dimen/dp_25"
+                android:background="#F1EAEA"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/xiaoyu_mypoints_star"
+                android:layout_width="@dimen/dp_25"
+                android:layout_height="@dimen/dp_25"
+                android:layout_marginRight="@dimen/dp_10"
+                android:src="@drawable/zyz_blue_score"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintRight_toLeftOf="@+id/xiaoyu_mypoints_my"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/xiaoyu_mypoints_my"
+                style="@style/mypoints_my_integrate"
+                android:text="我的积分"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintRight_toLeftOf="@+id/xiaoyu_mypoints_my_integrate"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/xiaoyu_mypoints_my_integrate"
+                style="@style/mypoints_my_integrate"
+                android:layout_marginRight="@dimen/dp_20"
+                android:text="200"
+                android:textSize="@dimen/dp_16"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <com.google.android.material.tabs.TabLayout
         android:id="@+id/tablayout"
-        app:tabSelectedTextColor="#2196F3"
         android:layout_width="match_parent"
         android:layout_height="@dimen/dp_50"
-        android:layout_marginTop="@dimen/dp_20"
-        app:layout_constraintTop_toBottomOf="@id/con_head" />
+        app:layout_constraintTop_toBottomOf="@id/con_head"
+        app:tabSelectedTextColor="#2196F3" />
+    <View
+        android:id="@+id/view"
+        android:background="#EFE8E8"
+        app:layout_constraintTop_toBottomOf="@id/tablayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_10"/>
 
     <androidx.viewpager.widget.ViewPager
         android:id="@+id/viewpager"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tablayout" />
+        app:layout_constraintTop_toBottomOf="@id/view" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

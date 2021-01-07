@@ -2,8 +2,8 @@ package com.example.gug.zyz.customer;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.ImageView;
-import android.widget.Toast;
 
 import com.example.gug.R;
 import com.example.gug.base.BaseActivity;
@@ -17,6 +17,8 @@ import butterknife.OnClick;
 public class CustomerActivity extends BaseActivity {
     @BindView(R.id.iv_tel)
     ImageView ivTel;
+    @BindView(R.id.iv_back)
+    ImageView ivBack;
 
     @Override
     protected int getLayout() {
@@ -30,7 +32,13 @@ public class CustomerActivity extends BaseActivity {
 
     @Override
     protected void initView() {
-        Toast.makeText(this, "123", Toast.LENGTH_SHORT).show();
+        // Toast.makeText(this, "123", Toast.LENGTH_SHORT).show();
+        ivBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
     }
 
     @Override

@@ -1,8 +1,8 @@
 package com.example.gug.zyz.order;
 
 import android.os.Bundle;
+import android.view.View;
 import android.widget.ImageView;
-import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
@@ -25,6 +25,8 @@ public class ZOrderActivity extends BaseActivity {
     ViewPager viewpager;
     @BindView(R.id.tablayout)
     TabLayout tablayout;
+    @BindView(R.id.iv_back)
+    ImageView ivBack;
 
     @Override
     protected int getLayout() {
@@ -58,6 +60,12 @@ public class ZOrderActivity extends BaseActivity {
         tablayout.getTabAt(0).setText("全部");
         tablayout.getTabAt(1).setText("获取");
         tablayout.getTabAt(2).setText("使用");
+        ivBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
     }
 
     @Override
