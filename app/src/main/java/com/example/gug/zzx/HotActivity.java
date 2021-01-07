@@ -22,6 +22,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewpager.widget.ViewPager;
 
 import com.example.gug.R;
+import com.example.gug.axl.SettlementActivity;
 import com.example.gug.zjl.ui.navigation.OrderformActivity;
 import com.example.gug.zyz.customer.CustomerActivity;
 import com.google.android.material.tabs.TabLayout;
@@ -88,7 +89,7 @@ public class HotActivity extends AppCompatActivity implements View.OnClickListen
                 pop();
                 break;
             case R.id.btn_ll:// TODO 21/01/07
-                startActivity(new Intent(HotActivity.this, CustomerActivity.class));
+                startActivity(new Intent(HotActivity.this, SettlementActivity.class));
                 break;
             default:
                 break;
