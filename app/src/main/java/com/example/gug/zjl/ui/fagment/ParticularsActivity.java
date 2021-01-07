@@ -46,10 +46,19 @@ public class ParticularsActivity extends BaseActivity {
                 startActivity(new Intent(ParticularsActivity.this, LogisticsActivity.class));
             }
         });
+        //常见问题
         particulars_img.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(ParticularsActivity.this, OrderformActivity.class));
+            }
+        });
+
+        //返回
+        particulars_img.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(ParticularsActivity.this,HomeFragment.class));
             }
         });
     }

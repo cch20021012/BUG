@@ -21,7 +21,7 @@ public class IssueActivity extends AppCompatActivity {
     String[] group =
             {"什么是土星？"};
     String[][] child = {
-            {"11111111111111"}
+            {"践行以STEP-C阶梯创新教育体系为核心的理念/n，服务社会，坚持不懈地走科技与人文高度融合/n的中国素养教育创新之路，肩负培养中国青少年/n创新思维与创新能力的使命.土星文化的每一次/n创新与变革，只为给孩子带来更好的每一天/n深圳市致禾科技有限公司，只为给孩子带来更好/n的每一天。"}
     };
 
     private MyExpandableListAdapter myExpandableListAdapter;
