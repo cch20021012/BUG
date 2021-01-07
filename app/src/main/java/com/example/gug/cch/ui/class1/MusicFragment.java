@@ -18,20 +18,20 @@ import java.util.ArrayList;
 import butterknife.BindView;
 
 public class MusicFragment extends BaseFragment {
-    @BindView(R.id.tl_class)
-    TabLayout tlClass;
-    @BindView(R.id.vp_class)
-    ViewPager vpClass;
+        @BindView(R.id.tl_class)
+        TabLayout tlClass;
+        @BindView(R.id.vp_class)
+        ViewPager vpClass;
 
-    @Override
-    protected int getLayout() {
-        return R.layout.cch_music_fragment;
-    }
+        @Override
+        protected int getLayout() {
+            return R.layout.cch_music_fragment;
+        }
 
-    @Override
-    protected IBasePresenter createPrenter() {
-        return null;
-    }
+        @Override
+        protected IBasePresenter createPrenter() {
+            return null;
+        }
 
     @Override
     protected void initView() {

@@ -96,19 +96,19 @@ public class MeFragment extends BaseFragment implements View.OnClickListener {
     @BindView(R.id.me_dingdan)
     LinearLayout meDingdan;
     @BindView(R.id.me_layout_work)
-    LinearLayout meLayoutWork;
+    RelativeLayout meLayoutWork;
     @BindView(R.id.me_layout_sport)
-    LinearLayout meLayoutSport;
+    RelativeLayout meLayoutSport;
     @BindView(R.id.me_layout_moeny)
-    LinearLayout meLayoutMoeny;
+    RelativeLayout meLayoutMoeny;
     @BindView(R.id.me_layout_parent)
-    LinearLayout meLayoutParent;
+    RelativeLayout meLayoutParent;
     @BindView(R.id.me_layout_nowchat)
-    LinearLayout meLayoutNowchat;
+    RelativeLayout meLayoutNowchat;
     @BindView(R.id.me_layout_setting)
-    LinearLayout meLayoutSetting;
-    @BindView(R.id.ll_guan)
-    LinearLayout llGuan;
+    RelativeLayout meLayoutSetting;
+//    @BindView(R.id.ll_guan)
+//    LinearLayout llGuan;
 
 
     @Override
@@ -179,8 +179,8 @@ public class MeFragment extends BaseFragment implements View.OnClickListener {
         }
     }
 
-    @OnClick(R.id.ll_guan)
-    public void onViewClicked() {
-        startActivity(new Intent(getActivity(), AskActivity.class));
-    }
+//    @OnClick(R.id.ll_guan)
+//    public void onViewClicked() {
+//        startActivity(new Intent(getActivity(), AskActivity.class));
+//    }
 }
