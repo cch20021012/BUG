@@ -8,13 +8,14 @@
     android:orientation="vertical">
 
     <androidx.appcompat.widget.Toolbar
+        android:background="@color/white"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <ImageView
             android:id="@+id/work_img_left"
             android:src="@mipmap/me_left"
-            android:layout_width="@dimen/dp_40"
-            android:layout_height="@dimen/dp_40"/>
+            android:layout_width="@dimen/dp_30"
+            android:layout_height="@dimen/dp_30"/>
         <TextView
             android:text="我的作业"
             android:textSize="@dimen/dp_20"
