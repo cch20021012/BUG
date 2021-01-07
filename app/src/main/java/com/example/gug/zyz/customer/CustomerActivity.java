@@ -53,7 +53,7 @@ public class CustomerActivity extends BaseActivity {
         ButterKnife.bind(this);
     }
 
-    @OnClick(R.id.iv_tel)
+    @OnClick({R.id.iv_tel})
     public void onViewClicked() {
         startActivity(new Intent(this, TelActivity.class));
     }

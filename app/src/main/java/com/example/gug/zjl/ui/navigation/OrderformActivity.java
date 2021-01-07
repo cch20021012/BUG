@@ -29,7 +29,7 @@ public class OrderformActivity extends BaseActivity {
     TabLayout orderformTab;
     @BindView(R.id.orderform_vp)
     ViewPager orderformVp;
-    @BindView(R.id.orderform_img)
+    @BindView(R.id.orderfrom_img)
     ImageView orderformImg;
     private OrderformFragmentAdapter adapter;
 
@@ -59,7 +59,7 @@ public class OrderformActivity extends BaseActivity {
         orderformImg.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(OrderformActivity.this, MeFragment.class));
+                finish();
             }
         });
     }

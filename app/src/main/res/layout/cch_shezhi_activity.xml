@@ -10,6 +10,7 @@
         android:layout_height="@dimen/dp_50"
         >
         <ImageView
+            android:id="@+id/set_back"
             android:layout_width="@dimen/dp_30"
             android:layout_height="@dimen/dp_30"
             android:scaleType="centerCrop"
@@ -17,8 +18,7 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintLeft_toLeftOf="parent"
             android:src="@drawable/left"
-            android:layout_marginLeft="@dimen/dp_10"
-            />
+            android:layout_marginLeft="@dimen/dp_10" />
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

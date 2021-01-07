@@ -2,6 +2,8 @@ package com.example.gug.zyz;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.ImageView;
 
 import androidx.recyclerview.widget.DividerItemDecoration;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -21,6 +23,8 @@ import butterknife.ButterKnife;
 public class ShezhiActivity extends BaseActivity {
     @BindView(R.id.rlv)
     RecyclerView rlv;
+    @BindView(R.id.set_back)
+    ImageView setBack;
     private SheAdapter sheAdapter;
 
     @Override
@@ -35,7 +39,12 @@ public class ShezhiActivity extends BaseActivity {
 
     @Override
     protected void initView() {
-
+        setBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
     }
 
     @Override
@@ -45,14 +54,14 @@ public class ShezhiActivity extends BaseActivity {
         strings.add("清除缓存");
         strings.add("意见反馈");
         strings.add("退出登录");
-        sheAdapter = new SheAdapter(this,strings);
+        sheAdapter = new SheAdapter(this, strings);
         rlv.setLayoutManager(new LinearLayoutManager(this));
-        rlv.addItemDecoration(new DividerItemDecoration(this,DividerItemDecoration.VERTICAL));
+        rlv.addItemDecoration(new DividerItemDecoration(this, DividerItemDecoration.VERTICAL));
         rlv.setAdapter(sheAdapter);
         sheAdapter.addListClick(new BaseAdapter.IListClick() {
             @Override
             public void itemClick(int pos) {
-                if (pos==0){
+                if (pos == 0) {
                     startActivity(new Intent(ShezhiActivity.this, AboutActivity.class));
                 }
             }
