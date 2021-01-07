@@ -29,7 +29,6 @@ public class ShezhiActivity extends BaseActivity {
 
     @Override
     protected int getLayout() {
-        
         return R.layout.cch_shezhi_activity;
     }
 
