@@ -35,7 +35,6 @@
         <activity android:name=".zyz.customer.CustomerActivity">
 
         </activity>
-        <activity android:name=".psy.ui.TelActivity"/>
 
     </application>
 
