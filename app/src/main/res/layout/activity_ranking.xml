@@ -25,25 +25,28 @@
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <LinearLayout
+        <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="@dimen/dp_80"
             android:layout_marginLeft="@dimen/dp_20"
             android:layout_marginTop="@dimen/dp_50"
             android:layout_marginRight="@dimen/dp_20"
-            android:background="@drawable/shap_ranking"
+            android:background="@mipmap/back_toupiao"
             android:orientation="vertical"
             app:layout_constraintTop_toTopOf="parent">
 
             <androidx.constraintlayout.widget.ConstraintLayout
-                android:layout_width="match_parent"
+                android:layout_width="@dimen/dp_200"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:id="@+id/ll"
                 android:layout_height="wrap_content">
 
                 <TextView
                     android:id="@+id/txt_love_num"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="@dimen/dp_30"
+                    android:layout_marginLeft="@dimen/dp_20"
                     android:layout_marginTop="@dimen/dp_10"
                     android:text="322222"
                     android:textColor="#ffffff"
@@ -55,7 +58,7 @@
                     android:id="@+id/txt_ranking_num"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="@dimen/dp_130"
+                    android:layout_marginLeft="@dimen/dp_110"
                     android:layout_marginTop="@dimen/dp_10"
                     android:text="8"
                     android:textColor="#ffffff"
@@ -67,7 +70,7 @@
                     android:id="@+id/txt_city"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="@dimen/dp_200"
+                    android:layout_marginLeft="@dimen/dp_160"
                     android:layout_marginTop="@dimen/dp_10"
                     android:text="北京"
                     android:textColor="#ffffff"
@@ -77,13 +80,16 @@
             </androidx.constraintlayout.widget.ConstraintLayout>
 
             <androidx.constraintlayout.widget.ConstraintLayout
-                android:layout_width="match_parent"
+                android:layout_width="@dimen/dp_200"
+                app:layout_constraintTop_toBottomOf="@id/ll"
+                android:layout_marginTop="@dimen/dp_5"
+                app:layout_constraintLeft_toLeftOf="parent"
                 android:layout_height="wrap_content">
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="@dimen/dp_30"
+                    android:layout_marginLeft="@dimen/dp_20"
                     android:layout_marginTop="@dimen/dp_10"
                     android:text="喜欢数"
                     android:textColor="#ffffff"
@@ -93,7 +99,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="@dimen/dp_125"
+                    android:layout_marginLeft="@dimen/dp_105"
                     android:layout_marginTop="@dimen/dp_10"
                     android:text="排名"
                     android:textColor="#ffffff"
@@ -103,15 +109,15 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="@dimen/dp_200"
+                    android:layout_marginLeft="@dimen/dp_160"
                     android:layout_marginTop="@dimen/dp_10"
                     android:text="城市"
                     android:textColor="#ffffff"
                     app:layout_constraintLeft_toLeftOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"></TextView>
+                        app:layout_constraintTop_toTopOf="parent"></TextView>
             </androidx.constraintlayout.widget.ConstraintLayout>
 
-        </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
 
         <TextView
             android:id="@+id/tt"
@@ -244,7 +250,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="@dimen/dp_10"
-                    android:text="郑志雄" />
+                    android:text="日本人" />
             </LinearLayout>
         </LinearLayout>
 
@@ -269,64 +275,73 @@
             android:layout_marginRight="@dimen/dp_20"
             android:background="@drawable/shap_ranking"
             android:scaleType="centerCrop"
-            android:src="@mipmap/event_music"
+            android:src="@mipmap/back_tu"
             app:layout_constraintTop_toBottomOf="@id/tt1" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="@dimen/dp_20"
-            android:text="作品说明："
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/img_zuoping" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="@dimen/dp_20"
             android:text="作品说明："
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/img_zuoping" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="@dimen/dp_20"
+            android:id="@+id/txt_content"
             android:layout_marginTop="@dimen/dp_20"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/img_zuoping" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:layout_marginTop="@dimen/dp_5"
             android:text="jhajhahhahahhhdhwahdwha"
             app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/img_zuoping" />
+            app:layout_constraintTop_toBottomOf="@id/txt_content" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="@dimen/dp_20"
-            android:layout_marginTop="@dimen/dp_40"
             android:text="作品编号："
+            android:layout_marginTop="@dimen/dp_35"
             app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/img_zuoping" />
+            app:layout_constraintTop_toBottomOf="@id/txt_content" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="@dimen/dp_20"
             android:id="@+id/tt2"
-            android:layout_marginTop="@dimen/dp_60"
-            android:text="jhajhahhahahhhdhwahdwha"
+            android:layout_marginTop="@dimen/dp_55"
+            android:text="123456789"
             app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/img_zuoping" />
+            app:layout_constraintTop_toBottomOf="@id/txt_content" />
+    <FrameLayout
+        android:layout_width="match_parent"
+        app:layout_constraintTop_toBottomOf="@id/tt2"
+        android:layout_height="wrap_content"
+        >
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_200"
+            android:background="@mipmap/back_toupiao3"
+            />
+
         <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@drawable/shap_event_btn"
-            android:text="投票"
+            android:id="@+id/btn_tou"
+            android:layout_width="112dp"
+            android:layout_height="@dimen/dp_50"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/dp_25"
+            android:background="@mipmap/btn_toupiao"
             android:textColor="#ffffff"
-            android:layout_marginTop="@dimen/dp_50"
-            app:layout_constraintTop_toBottomOf="@id/tt2"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
-            />
+            app:layout_constraintTop_toBottomOf="@id/tt2"
+            app:layout_goneMarginTop="@dimen/dp_50" />
+    </FrameLayout>
                 </androidx.constraintlayout.widget.ConstraintLayout>
+
 
 
 </androidx.core.widget.NestedScrollView>
