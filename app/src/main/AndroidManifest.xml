@@ -9,30 +9,19 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".axl.LoginActivity">
-        </activity>
-        <activity android:name=".zyz.ShezhiActivity">
-
-        </activity>
-        <activity android:name=".axl.OneToOneActivity" />
-        <activity android:name=".axl.CalendarActivity" />
-        <activity android:name=".axl.AskActivity" />
-        <activity android:name=".axl.PayActivity" />
-        <activity android:name=".axl.AboutActivity" />
-        <activity android:name=".axl.IdentityActivity" />
-        <activity android:name=".axl.SettlementActivity" />
         <activity android:name=".OneActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity android:name=".MainActivity">
 
         </activity>
 
         <activity android:name=".zyz.order.ZOrderActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
 
         </activity>
         <activity android:name=".zyz.personal.PersonalActivity">
@@ -41,36 +30,12 @@
 
         <activity android:name=".zyz.login.LoginMusic">
 
-        </activity>
-
-        <activity android:name=".zyz.customer.CustomerActivity"/>
-        <activity android:name=".zjl.ui.navigation.ApplyActivity"/>
-        <activity android:name=".zjl.ui.navigation.OrderformActivity"/>
-        <activity android:name=".zjl.ui.navigation.NavigationActivity"/>
-        <activity android:name=".zjl.ui.fagment.ParticularsActivity"/>
-        <activity android:name=".zjl.ui.fagment.LogisticsActivity"/>
-        <activity android:name=".zjl.ui.navigation.CollectAtcivity"/>
-        <activity android:name=".psy.ui.DiscountActivity"/>
-        <activity android:name=".psy.ui.TelActivity"/>
-        <activity android:name=".psy.ui.WorkTalkActivity"/>
-        <activity android:name=".psy.ui.ParentActivity"/>
-        <activity android:name=".psy.ui.WorkActivity">
 
         </activity>
-        <activity android:name=".psy.ui.MeAcyivity" >
+        <activity android:name=".zyz.customer.CustomerActivity">
 
         </activity>
 
-
-        <activity android:name=".zzx.LogisActivity"></activity>
-        <activity android:name=".zzx.LeaveActivity" />
-        <activity android:name=".zzx.HotActivity" />
-        <activity android:name=".zzx.RankingActivity" />
-        <activity android:name=".base.BaseActivity" />
-        <activity android:name=".zjl.ui.IssueActivity"/>
-        <meta-data
-            android:name="android.webkit.WebView.EnableSafeBrowsing"
-            android:value="true" />
     </application>
 
 </manifest>
