@@ -7,9 +7,10 @@
     android:orientation="vertical">
 
     <androidx.cardview.widget.CardView
+        android:layout_marginTop="@dimen/dp_10"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:cardBackgroundColor="#A7ACAB"
+        app:cardBackgroundColor="#E7ECEB"
         app:cardCornerRadius="@dimen/dp_20"
         app:cardElevation="@dimen/dp_0"
         app:cardMaxElevation="@dimen/dp_0"
@@ -61,7 +62,7 @@
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:cardBackgroundColor="#A7ACAB"
+        app:cardBackgroundColor="#E7ECEB"
         app:cardCornerRadius="@dimen/dp_20"
         app:cardElevation="@dimen/dp_0"
         app:cardMaxElevation="@dimen/dp_0"

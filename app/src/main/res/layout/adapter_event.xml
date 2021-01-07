@@ -3,18 +3,20 @@
     android:layout_width="wrap_content"
     android:background="#ffffff"
     app:cardUseCompatPadding="true"
+
     app:cardElevation="@dimen/dp_0"
     app:cardCornerRadius="@dimen/dp_5"
     android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto">
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="@dimen/dp_300"
-        android:layout_height="@dimen/dp_150"
+        android:layout_height="@dimen/dp_250"
+        android:padding="@dimen/dp_15"
         >
         <ImageView
             app:layout_constraintLeft_toLeftOf="parent"
-            android:layout_width="@dimen/dp_120"
-            android:layout_height="@dimen/dp_100"
+            android:layout_width="@dimen/dp_100"
+            android:layout_height="@dimen/dp_130"
             android:src="@mipmap/event_music"
             android:scaleType="centerCrop"
             android:id="@+id/img_big"
@@ -23,36 +25,84 @@
         <TextView
             android:layout_width="wrap_content"
 
-
             android:layout_height="wrap_content"
             android:text="钢琴直播课程"
             android:textSize="@dimen/sp_18"
             android:id="@+id/txt_title"
             app:layout_constraintTop_toTopOf="parent"
-            android:layout_marginLeft="@dimen/dp_20"
+            android:layout_marginLeft="@dimen/dp_10"
             android:layout_marginTop="@dimen/dp_10"
             app:layout_constraintLeft_toRightOf="@id/img_big"
             android:textColor="#000000"
             />
+        <ImageView
+            android:layout_width="@dimen/dp_50"
+            android:layout_height="@dimen/dp_30"
+            android:layout_marginTop="@dimen/dp_8"
+            android:src="@mipmap/new2"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            />
+
         <TextView
             android:layout_width="@dimen/dp_130"
             android:layout_height="wrap_content"
             android:text="12月5日晚8点直播！一起来参加！"
             app:layout_constraintTop_toTopOf="parent"
-            android:layout_marginTop="@dimen/dp_40"
-            android:layout_marginLeft="@dimen/dp_20"
+            android:layout_marginTop="@dimen/dp_50"
+            android:layout_marginLeft="@dimen/dp_10"
             app:layout_constraintLeft_toRightOf="@id/img_big"
             android:id="@+id/txt_content"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2178"
+            app:layout_constraintTop_toBottomOf="@id/txt_content"
+            app:layout_constraintRight_toLeftOf="@id/txt_people"
+            android:textSize="@dimen/sp_20"
+            android:textColor="#FF5252"
+            android:layout_marginTop="@dimen/dp_10"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="人参加"
+            app:layout_constraintTop_toBottomOf="@id/txt_content"
+            app:layout_constraintRight_toRightOf="parent"
+            android:textSize="@dimen/sp_16"
+            android:layout_marginTop="@dimen/dp_13"
+            android:id="@+id/txt_people"
+            />
+        <ImageView
+            android:layout_width="@dimen/sp_20"
+            android:layout_height="@dimen/sp_20"
+            android:src="@mipmap/time"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginLeft="@dimen/sp_10"
+            android:layout_marginTop="@dimen/dp_10"
+            app:layout_constraintTop_toBottomOf="@id/img_big"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="限时报名"
+            app:layout_constraintTop_toBottomOf="@id/img_big"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginTop="@dimen/dp_10"
+            android:layout_marginLeft="@dimen/dp_35"
+            android:textColor="#E63A3A"
             />
         <Button
             android:layout_width="@dimen/dp_80"
             android:layout_height="@dimen/dp_40"
             android:background="@drawable/shap_event_btn"
             android:text="报名"
+            android:layout_marginBottom="@dimen/sp_20"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintRight_toRightOf="parent"
             android:id="@+id/btn_commit"
-            android:layout_margin="@dimen/dp_20"
+
             />
 
     </androidx.constraintlayout.widget.ConstraintLayout>

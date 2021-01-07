@@ -135,6 +135,8 @@ public class MeFragment extends BaseFragment implements View.OnClickListener {
     @OnClick({R.id.me_collection, R.id.me_dingdan, R.id.me_fragment_btn_more, R.id.me_img_exit, R.id.me_layout_work, R.id.me_layout_sport, R.id.me_layout_moeny, R.id.me_layout_parent, R.id.me_layout_nowchat, R.id.me_layout_setting})
     public void onClick(View view) {
         switch (view.getId()) {
+
+
             case R.id.me_fragment_btn_more:
                 //跳转到积分
                 startActivity(new Intent(getContext(), ZOrderActivity.class));
@@ -168,10 +170,11 @@ public class MeFragment extends BaseFragment implements View.OnClickListener {
                 startActivity(new Intent(getContext(), ShezhiActivity.class));
                 //startActivity(new Intent(getContext(), AboutActivity.class));
                 break;
-
+                //收藏
             case R.id.me_collection:
                 startActivity(new Intent(getActivity(), CollectAtcivity.class));
                 break;
+                //我的订单
             case R.id.me_dingdan:
                 startActivity(new Intent(getActivity(), OrderformActivity.class));
                 break;
