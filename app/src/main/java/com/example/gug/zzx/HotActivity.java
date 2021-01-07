@@ -89,7 +89,7 @@ public class HotActivity extends AppCompatActivity implements View.OnClickListen
                 pop();
                 break;
             case R.id.btn_ll:// TODO 21/01/07
-                startActivity(new Intent(HotActivity.this, SettlementActivity.class));
+                startActivity(new Intent(HotActivity.this, CustomerActivity.class));
                 break;
             default:
                 break;
@@ -107,7 +107,7 @@ public class HotActivity extends AppCompatActivity implements View.OnClickListen
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(HotActivity.this, OrderformActivity.class));
+                startActivity(new Intent(HotActivity.this, SettlementActivity.class));
             }
         });
 
